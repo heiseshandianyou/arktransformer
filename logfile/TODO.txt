@@ -1,0 +1,14 @@
+1.this 不能在静态方法里出现
+结合上面一点 typescript的函数this 十分灵活  这一点需要解决
+
+2. 检查输入的实参数目, 少的参数用 null 来代替
+
+3. 数组类型的数据整理
+
+4. printer的优化
+
+5. flowdroid 的使用
+
+6. 库函数编写
+
+7. typescript -> class 的API
