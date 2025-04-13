@@ -1,0 +1,46 @@
+public class superClass.superts.Parent1 extends java.lang.Object
+{
+int number;
+
+java.lang.Object instance_init ()
+{
+superClass.superts.Parent1 this;
+
+this := @this: superClass.superts.Parent1;
+this.<superClass.superts.Parent1 : int number> = 0;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+superClass.superts.Parent1 this;
+
+this := @this: superClass.superts.Parent1;
+return;
+
+}
+
+public java.lang.Object say ()
+{
+superClass.superts.Parent1 this;
+java.lang.Object console;
+
+this := @this: superClass.superts.Parent1;
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>("StringConstant");
+return;
+
+}
+
+public void <init> ()
+{
+java.lang.Object this;
+
+this := @this: superClass.superts.Parent1;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+specialinvoke this.<superClass.superts.Parent1 :  void instance_init( )>();
+return;
+
+}
+
+}

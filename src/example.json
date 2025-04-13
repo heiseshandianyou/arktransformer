@@ -1,0 +1,9 @@
+{
+    "targetProjectName": "demo",
+    "targetProjectDirectory": "./src/test/test_Project/UnaryOp",
+    "logPath": "D:\\log\\ArkAnalyzer.log",
+    "ohosSdkPath": "",
+    "kitSdkPath": "",
+    "systemSdkPath": "", 
+    "otherSdks": []
+} 

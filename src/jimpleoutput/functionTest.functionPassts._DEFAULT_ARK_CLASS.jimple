@@ -1,0 +1,23 @@
+public class functionTest.functionPassts._DEFAULT_ARK_CLASS extends java.lang.Object
+{
+
+void _DEFAULT_ARK_METHOD ()
+{
+functionTest.functionPassts._DEFAULT_ARK_CLASS this;
+
+this := @this: functionTest.functionPassts._DEFAULT_ARK_CLASS;
+return;
+
+}
+
+public void <init> ()
+{
+functionTest.functionPassts._DEFAULT_ARK_CLASS this;
+
+this := @this: functionTest.functionPassts._DEFAULT_ARK_CLASS;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+return;
+
+}
+
+}

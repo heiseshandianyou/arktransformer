@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "ArkUI 组件示例"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "ArkUI 组件示例"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ArkUI 组件"
+    }
+  ]
+}

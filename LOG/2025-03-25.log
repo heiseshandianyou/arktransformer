@@ -1,0 +1,170 @@
+2025-03-25T07:54:21.043Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T07:54:21.045Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T07:54:21.046Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T07:55:01.158Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T07:55:01.159Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T07:55:01.160Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T07:55:01.167Z     开始检查ArkBody的实例初始函数@instance_init
+2025-03-25T07:55:01.168Z       该类初始方法没有this变量
+2025-03-25T07:55:01.201Z       添加local变量
+2025-03-25T07:55:01.201Z       ArkBody没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T07:55:01.226Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T07:55:01.226Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T07:55:01.227Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T07:55:01.229Z     开始检查Parent1的实例初始函数@instance_init
+2025-03-25T07:55:01.230Z       该类初始方法没有this变量
+2025-03-25T07:55:01.230Z       添加local变量
+2025-03-25T07:55:01.231Z       Parent1没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T07:55:01.234Z     开始检查Child1的实例初始函数@instance_init
+2025-03-25T07:55:01.234Z       该类初始方法没有this变量
+2025-03-25T07:55:01.235Z       添加local变量
+2025-03-25T07:55:01.237Z     开始检查Parent2的实例初始函数@instance_init
+2025-03-25T07:55:01.238Z       该类初始方法没有this变量
+2025-03-25T07:55:01.238Z       添加local变量
+2025-03-25T07:55:01.239Z       Parent2没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T07:55:01.242Z     开始检查Child2的实例初始函数@instance_init
+2025-03-25T07:55:01.243Z       该类初始方法没有this变量
+2025-03-25T07:55:01.243Z       添加local变量
+2025-03-25T07:55:01.246Z     开始检查Parent3的实例初始函数@instance_init
+2025-03-25T07:55:01.246Z       该类初始方法没有this变量
+2025-03-25T07:55:01.247Z       添加local变量
+2025-03-25T07:55:01.247Z       Parent3没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T07:55:01.250Z     开始检查Child3的实例初始函数@instance_init
+2025-03-25T07:55:01.251Z       该类初始方法没有this变量
+2025-03-25T07:55:01.251Z       添加local变量
+2025-03-25T07:55:01.254Z     开始检查unknownTounknownFunction的实例初始函数@instance_init
+2025-03-25T07:55:01.255Z     unknownTounknownFunction没有实例初始函数
+2025-03-25T07:55:01.255Z     unknownTounknownFunction没有静态初始函数
+2025-03-25T07:55:01.256Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$的实例初始函数@instance_init
+2025-03-25T07:55:01.257Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有实例初始函数
+2025-03-25T07:55:01.257Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有静态初始函数
+2025-03-25T07:55:01.260Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$的实例初始函数@instance_init
+2025-03-25T07:55:01.261Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有实例初始函数
+2025-03-25T07:55:01.261Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有静态初始函数
+2025-03-25T08:14:38.469Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:14:38.471Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:14:38.472Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:14:38.479Z     开始检查ArkBody的实例初始函数@instance_init
+2025-03-25T08:14:38.480Z       该类初始方法没有this变量
+2025-03-25T08:14:38.480Z       添加local变量
+2025-03-25T08:14:38.481Z       ArkBody没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:15:22.043Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:15:22.044Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:15:22.045Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:15:22.051Z     开始检查ArkBody的实例初始函数@instance_init
+2025-03-25T08:15:22.051Z       该类初始方法没有this变量
+2025-03-25T08:15:22.052Z       添加local变量
+2025-03-25T08:15:22.053Z       ArkBody没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:15:22.076Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:15:22.077Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:15:22.078Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:15:22.079Z     开始检查Parent1的实例初始函数@instance_init
+2025-03-25T08:15:22.080Z       该类初始方法没有this变量
+2025-03-25T08:15:22.081Z       添加local变量
+2025-03-25T08:15:22.081Z       Parent1没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:15:22.084Z     开始检查Child1的实例初始函数@instance_init
+2025-03-25T08:15:22.085Z       该类初始方法没有this变量
+2025-03-25T08:15:22.085Z       添加local变量
+2025-03-25T08:15:22.087Z     开始检查Parent2的实例初始函数@instance_init
+2025-03-25T08:15:22.088Z       该类初始方法没有this变量
+2025-03-25T08:15:22.088Z       添加local变量
+2025-03-25T08:15:22.089Z       Parent2没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:15:22.092Z     开始检查Child2的实例初始函数@instance_init
+2025-03-25T08:15:22.093Z       该类初始方法没有this变量
+2025-03-25T08:15:22.093Z       添加local变量
+2025-03-25T08:15:22.095Z     开始检查Parent3的实例初始函数@instance_init
+2025-03-25T08:15:22.096Z       该类初始方法没有this变量
+2025-03-25T08:15:22.096Z       添加local变量
+2025-03-25T08:15:22.097Z       Parent3没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:15:22.100Z     开始检查Child3的实例初始函数@instance_init
+2025-03-25T08:15:22.101Z       该类初始方法没有this变量
+2025-03-25T08:15:22.101Z       添加local变量
+2025-03-25T08:15:22.104Z     开始检查unknownTounknownFunction的实例初始函数@instance_init
+2025-03-25T08:15:22.104Z     unknownTounknownFunction没有实例初始函数
+2025-03-25T08:15:22.105Z     unknownTounknownFunction没有静态初始函数
+2025-03-25T08:15:22.106Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$的实例初始函数@instance_init
+2025-03-25T08:15:22.106Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有实例初始函数
+2025-03-25T08:15:22.107Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有静态初始函数
+2025-03-25T08:15:22.109Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$的实例初始函数@instance_init
+2025-03-25T08:15:22.110Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有实例初始函数
+2025-03-25T08:15:22.110Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有静态初始函数
+2025-03-25T08:17:41.517Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:17:41.518Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:17:41.519Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:17:41.527Z     开始检查ArkBody的实例初始函数@instance_init
+2025-03-25T08:17:41.527Z       该类初始方法没有this变量
+2025-03-25T08:17:41.528Z       添加local变量
+2025-03-25T08:17:41.528Z       ArkBody没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:17:41.550Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:17:41.551Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:17:41.551Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:17:41.554Z     开始检查Parent1的实例初始函数@instance_init
+2025-03-25T08:17:41.554Z       该类初始方法没有this变量
+2025-03-25T08:17:41.555Z       添加local变量
+2025-03-25T08:17:41.555Z       Parent1没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:17:41.557Z     开始检查Child1的实例初始函数@instance_init
+2025-03-25T08:17:41.558Z       该类初始方法没有this变量
+2025-03-25T08:17:41.558Z       添加local变量
+2025-03-25T08:17:41.561Z     开始检查Parent2的实例初始函数@instance_init
+2025-03-25T08:17:41.562Z       该类初始方法没有this变量
+2025-03-25T08:17:41.562Z       添加local变量
+2025-03-25T08:17:41.563Z       Parent2没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:17:41.566Z     开始检查Child2的实例初始函数@instance_init
+2025-03-25T08:17:41.566Z       该类初始方法没有this变量
+2025-03-25T08:17:41.567Z       添加local变量
+2025-03-25T08:17:41.569Z     开始检查Parent3的实例初始函数@instance_init
+2025-03-25T08:17:41.570Z       该类初始方法没有this变量
+2025-03-25T08:17:41.571Z       添加local变量
+2025-03-25T08:17:41.571Z       Parent3没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:17:41.574Z     开始检查Child3的实例初始函数@instance_init
+2025-03-25T08:17:41.575Z       该类初始方法没有this变量
+2025-03-25T08:17:41.575Z       添加local变量
+2025-03-25T08:17:41.578Z     开始检查unknownTounknownFunction的实例初始函数@instance_init
+2025-03-25T08:17:41.578Z     unknownTounknownFunction没有实例初始函数
+2025-03-25T08:17:41.579Z     unknownTounknownFunction没有静态初始函数
+2025-03-25T08:17:41.580Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$的实例初始函数@instance_init
+2025-03-25T08:17:41.581Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有实例初始函数
+2025-03-25T08:17:41.581Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有静态初始函数
+2025-03-25T08:17:41.584Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$的实例初始函数@instance_init
+2025-03-25T08:17:41.585Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有实例初始函数
+2025-03-25T08:17:41.585Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有静态初始函数
+2025-03-25T08:18:59.028Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:18:59.030Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:18:59.031Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:18:59.037Z     开始检查ArkBody的实例初始函数@instance_init
+2025-03-25T08:18:59.037Z       该类初始方法没有this变量
+2025-03-25T08:18:59.038Z       添加local变量
+2025-03-25T08:18:59.039Z       ArkBody没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:18:59.061Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-25T08:18:59.061Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-25T08:18:59.062Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-25T08:18:59.064Z     开始检查Parent1的实例初始函数@instance_init
+2025-03-25T08:18:59.064Z       该类初始方法没有this变量
+2025-03-25T08:18:59.065Z       添加local变量
+2025-03-25T08:18:59.065Z       Parent1没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:18:59.068Z     开始检查Child1的实例初始函数@instance_init
+2025-03-25T08:18:59.068Z       该类初始方法没有this变量
+2025-03-25T08:18:59.069Z       添加local变量
+2025-03-25T08:18:59.071Z     开始检查Parent2的实例初始函数@instance_init
+2025-03-25T08:18:59.072Z       该类初始方法没有this变量
+2025-03-25T08:18:59.072Z       添加local变量
+2025-03-25T08:18:59.073Z       Parent2没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:18:59.075Z     开始检查Child2的实例初始函数@instance_init
+2025-03-25T08:18:59.076Z       该类初始方法没有this变量
+2025-03-25T08:18:59.076Z       添加local变量
+2025-03-25T08:18:59.079Z     开始检查Parent3的实例初始函数@instance_init
+2025-03-25T08:18:59.079Z       该类初始方法没有this变量
+2025-03-25T08:18:59.080Z       添加local变量
+2025-03-25T08:18:59.080Z       Parent3没有父类我们构造一个对java.lang.Object的调用
+2025-03-25T08:18:59.084Z     开始检查Child3的实例初始函数@instance_init
+2025-03-25T08:18:59.084Z       该类初始方法没有this变量
+2025-03-25T08:18:59.084Z       添加local变量
+2025-03-25T08:18:59.087Z     开始检查unknownTounknownFunction的实例初始函数@instance_init
+2025-03-25T08:18:59.087Z     unknownTounknownFunction没有实例初始函数
+2025-03-25T08:18:59.088Z     unknownTounknownFunction没有静态初始函数
+2025-03-25T08:18:59.089Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$的实例初始函数@instance_init
+2025-03-25T08:18:59.089Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有实例初始函数
+2025-03-25T08:18:59.090Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-constructor-0$没有静态初始函数
+2025-03-25T08:18:59.092Z     开始检查@superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$的实例初始函数@instance_init
+2025-03-25T08:18:59.093Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有实例初始函数
+2025-03-25T08:18:59.093Z     @superClass/ArkBody.ts: ArkBody.AnonymousMethod-setLocals-1$没有静态初始函数

@@ -1,0 +1,13 @@
+{
+    "targetProjectName": "ArkUI_Component",
+     "targetProjectDirectory": "D:\\harmonyos\\typescript_project\\arktransformer\\src\\test\\ArkUI_Component-main",
+     "logPath": "D:\\harmonyos\\analyze_program\\out\\log.txt",
+     
+     "sdks": [
+            {
+                "name": "etsSdk",
+                "path": "D:\\harmonyos\\sdk\\openharmony\\9\\ets",
+                "moduleName": ""
+            }
+        ]
+    }

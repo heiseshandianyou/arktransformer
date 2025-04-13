@@ -1,0 +1,126 @@
+public class functionTest.functionPassts.FunctionFactory extends java.lang.Object
+{
+
+java.lang.Object instance_init ()
+{
+functionTest.functionPassts.FunctionFactory this;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+functionTest.functionPassts.FunctionFactory this;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+return;
+
+}
+
+public java.lang.Object main ()
+{
+functionTest.functionPassts.FunctionFactory this, FunctionFactory;
+int add, result;
+functionTest.funcInterfaceFile.numberTonumberFunction fun1, fun2;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+add = staticinvoke <functionTest.functionPassts.FunctionFactory : int createInt( )>();
+fun1 = staticinvoke <functionTest.functionPassts.FunctionFactory : functionTest.funcInterfaceFile.numberTonumberFunction createFunction1( )>();
+fun2 = staticinvoke <functionTest.functionPassts.FunctionFactory : functionTest.funcInterfaceFile.numberTonumberFunction createFunction( functionTest.funcInterfaceFile.numberTonumberFunction, int)>(fun1, add);
+result = interfaceinvoke fun2.<functionTest.funcInterfaceFile.numberTonumberFunction: int apply(int)>(10);
+staticinvoke <functionTest.functionPassts.FunctionFactory : java.lang.Object sink( int)>(result);
+return;
+
+}
+
+
+public static int AnonymousMethod_createFunction_3 (functionTest.funcInterfaceFile.numberTonumberFunction, int, int)
+{
+functionTest.functionPassts.FunctionFactory this;
+int x, $temp0, add, $temp1;
+functionTest.funcInterfaceFile.numberTonumberFunction func;
+
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+func := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
+add := @parameter1: int;
+x := @parameter2: int;
+$temp0 = interfaceinvoke func.<functionTest.funcInterfaceFile.numberTonumberFunction: int apply(int)>(x);
+$temp1 = $temp0 + add;
+return $temp1;
+
+}
+
+public static int AnonymousMethod_createFunction1_4 (int)
+{
+functionTest.functionPassts.FunctionFactory this;
+int x, $temp0;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+x := @parameter0: int;
+$temp0 = x + 1;
+return $temp0;
+
+}
+
+public void <init> ()
+{
+java.lang.Object this;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+specialinvoke this.<functionTest.functionPassts.FunctionFactory :  void instance_init( )>();
+return;
+
+}
+
+public static void sink (int)
+{
+functionTest.functionPassts.FunctionFactory this;
+int input;
+
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+input := @parameter0: int;
+
+return;
+
+}
+
+public static int createInt ()
+{
+functionTest.functionPassts.FunctionFactory this;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+return 5;
+
+}
+
+public static functionTest.funcInterfaceFile.numberTonumberFunction createFunction (functionTest.funcInterfaceFile.numberTonumberFunction, int)
+{
+functionTest.functionPassts.FunctionFactory this;
+functionTest.funcInterfaceFile.numberTonumberFunction func;
+int add;
+functionTest.funcInterfaceFile.numberTounknownFunction AnonymousMethod_createFunction_3;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+func := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
+add := @parameter1: int;
+return AnonymousMethod_createFunction_3;
+
+}
+
+public static functionTest.funcInterfaceFile.numberTonumberFunction createFunction1 ()
+{
+functionTest.functionPassts.FunctionFactory this;
+functionTest.funcInterfaceFile.numberTounknownFunction AnonymousMethod_createFunction1_4;
+
+this := @this: functionTest.functionPassts.FunctionFactory;
+AnonymousMethod_createFunction1_4 = staticinvoke <functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ : functionTest.funcInterfaceFile.numberTounknownFunction bootstrap$( )>();
+return AnonymousMethod_createFunction1_4;
+
+}
+
+}

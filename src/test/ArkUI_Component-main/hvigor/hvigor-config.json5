@@ -1,0 +1,17 @@
+// API 9
+{
+  "hvigorVersion": "2.4.2",
+  "dependencies": {
+    "@ohos/hvigor-ohos-plugin": "2.4.2",
+  }
+}
+
+// API 11
+/*
+{
+  "hvigorVersion": "4.0.2",
+  "dependencies": {
+    "@ohos/hvigor-ohos-plugin": "4.0.2",
+  }
+}
+*/

@@ -1,0 +1,163 @@
+{
+  "version": "1.0",
+  "workerIdList": [
+    -1
+  ],
+  "metrics": [
+    {
+      "type": "build_line",
+      "endTime": 1731947117313,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "init",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947117311
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947117314,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "init",
+      "taskPath": "ArkUI_Component-main",
+      "workerId": -1,
+      "startTime": 1731947117314
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947140447,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreBuild",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947140268
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947140455,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@MergeProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947140448
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947140467,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@GenerateLoaderJson",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947140462
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947141065,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ProcessProfile",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947140471
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947141081,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreviewProcessResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947141074
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947143341,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreviewCompileResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947141089
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947143342,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreviewHookCompileResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947143342
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947143355,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@ReplacePreviewerPage",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947143344
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947143356,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "buildPreviewerResource",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947143356
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947143360,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreviewUpdateAssets",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947143357
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947159515,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "default@PreviewArkTS",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947143361
+    },
+    {
+      "type": "build_line",
+      "endTime": 1731947159518,
+      "status": "closed",
+      "children": [],
+      "name": "overallTime",
+      "taskName": "PreviewBuild",
+      "taskPath": "entry",
+      "workerId": -1,
+      "startTime": 1731947159518
+    }
+  ],
+  "workLog": []
+}

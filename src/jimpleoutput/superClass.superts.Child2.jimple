@@ -1,0 +1,36 @@
+public class superClass.superts.Child2 extends superClass.superts.Parent2
+{
+
+java.lang.Object instance_init ()
+{
+superClass.superts.Child2 this;
+
+this := @this: superClass.superts.Child2;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+superClass.superts.Child2 this;
+
+this := @this: superClass.superts.Child2;
+return;
+
+}
+
+public void <init> (java.lang.String)
+{
+superClass.superts.Child2 this;
+java.lang.String message;
+java.lang.Object console;
+
+this := @this: superClass.superts.Child2;
+message := @parameter0: java.lang.String;
+specialinvoke this.<superClass.superts.Child2 :  void instance_init( )>();
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>("StringConstant");
+return;
+
+}
+
+}

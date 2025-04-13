@@ -1,0 +1,35 @@
+public class superClass.superts._DEFAULT_ARK_CLASS extends java.lang.Object
+{
+
+java.lang.Object _DEFAULT_ARK_METHOD ()
+{
+superClass.superts._DEFAULT_ARK_CLASS this;
+superClass.superts.Child1 c1, $temp0;
+superClass.superts.Child2 c2, $temp1;
+superClass.superts.Child3 c3, $temp2;
+
+this := @this: superClass.superts._DEFAULT_ARK_CLASS;
+$temp0 = new superClass.superts.Child1;
+specialinvoke $temp0.<superClass.superts.Child1 :  void <init>( )>();
+c1 = $temp0;
+$temp1 = new superClass.superts.Child2;
+specialinvoke $temp1.<superClass.superts.Child2 :  void <init>( java.lang.String)>("StringConstant");
+c2 = $temp1;
+$temp2 = new superClass.superts.Child3;
+specialinvoke $temp2.<superClass.superts.Child3 :  void <init>( )>();
+c3 = $temp2;
+return;
+
+}
+
+public void <init> ()
+{
+superClass.superts._DEFAULT_ARK_CLASS this;
+
+this := @this: superClass.superts._DEFAULT_ARK_CLASS;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+return;
+
+}
+
+}

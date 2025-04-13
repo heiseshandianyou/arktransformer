@@ -1,0 +1,1056 @@
+2025-04-08T08:46:15.484Z number of classes: 14
+2025-04-08T08:46:15.492Z 开始对项目进行类型检查
+2025-04-08T08:46:15.493Z ------------------------------
+2025-04-08T08:46:15.493Z   开始检查文件functionPass.ts
+2025-04-08T08:46:15.494Z   开始检查类_DEFAULT_ARK_CLASS
+2025-04-08T08:46:15.495Z       方法模式: 开始检查方法: _DEFAULT_ARK_METHOD
+2025-04-08T08:46:15.496Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.496Z         检查方法:  _DEFAULT_ARK_METHOD  是否含有 if组件
+2025-04-08T08:46:15.497Z         检查方法:  _DEFAULT_ARK_METHOD是否有使用到却没有声明的变量
+2025-04-08T08:46:15.498Z         检查方法: _DEFAULT_ARK_METHOD是否有函数类型变量
+2025-04-08T08:46:15.499Z         开始检查调用表达式
+2025-04-08T08:46:15.500Z         检查语句: this = this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:46:15.501Z           检查值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS类型是: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:46:15.501Z           值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS 是一个引用类型
+2025-04-08T08:46:15.502Z         检查语句: return
+2025-04-08T08:46:15.503Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-04-08T08:46:15.503Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-04-08T08:46:15.504Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-04-08T08:46:15.505Z     This class is a default class we need check if it has a init method
+2025-04-08T08:46:15.506Z       This class has no constructor, we build it now
+2025-04-08T08:46:15.507Z   开始检查类FunctionFactory
+2025-04-08T08:46:15.508Z       方法模式: 开始检查方法: @instance_init
+2025-04-08T08:46:15.509Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.509Z         检查方法:  @instance_init  是否含有 if组件
+2025-04-08T08:46:15.510Z         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-04-08T08:46:15.511Z         检查方法: @instance_init是否有函数类型变量
+2025-04-08T08:46:15.511Z         开始检查调用表达式
+2025-04-08T08:46:15.512Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.512Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.513Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.513Z         检查语句: return
+2025-04-08T08:46:15.514Z       方法模式: 开始检查方法: @static_init
+2025-04-08T08:46:15.515Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.515Z         检查方法:  @static_init  是否含有 if组件
+2025-04-08T08:46:15.517Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-04-08T08:46:15.517Z         检查方法: @static_init是否有函数类型变量
+2025-04-08T08:46:15.518Z         开始检查调用表达式
+2025-04-08T08:46:15.518Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.519Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.519Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.520Z         检查语句: return
+2025-04-08T08:46:15.521Z       方法模式: 开始检查方法: main
+2025-04-08T08:46:15.523Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.524Z         检查方法:  main  是否含有 if组件
+2025-04-08T08:46:15.524Z         检查方法:  main是否有使用到却没有声明的变量
+2025-04-08T08:46:15.526Z         检查方法: main是否有函数类型变量
+2025-04-08T08:46:15.527Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun1
+2025-04-08T08:46:15.528Z           我们在项目中发现了所指的方法AnonymousMethod-2
+2025-04-08T08:46:15.528Z           该方法需要检查
+2025-04-08T08:46:15.529Z           该方法没有方法体
+2025-04-08T08:46:15.530Z           方法: AnonymousMethod-2检查完成
+2025-04-08T08:46:15.531Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun2
+2025-04-08T08:46:15.532Z           我们在项目中发现了所指的方法AnonymousMethod-1
+2025-04-08T08:46:15.533Z           该方法需要检查
+2025-04-08T08:46:15.535Z           该方法没有方法体
+2025-04-08T08:46:15.537Z           方法: AnonymousMethod-1检查完成
+2025-04-08T08:46:15.538Z         开始检查调用表达式
+2025-04-08T08:46:15.539Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.540Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.541Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.541Z         检查语句: add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:15.542Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()类型是: number
+2025-04-08T08:46:15.543Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:15.544Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.544Z               检查语句:  add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:15.545Z             !!!!!警告  没有找到方法:createInt同名的函数变量
+2025-04-08T08:46:15.546Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:15.548Z           该方法需要检查: 
+2025-04-08T08:46:15.549Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:15.550Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:15.550Z               方法模式: 开始检查方法: createInt
+2025-04-08T08:46:15.551Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.551Z                 检查方法:  createInt  是否含有 if组件
+2025-04-08T08:46:15.552Z                 检查方法:  createInt是否有使用到却没有声明的变量
+2025-04-08T08:46:15.553Z                 检查方法: createInt是否有函数类型变量
+2025-04-08T08:46:15.553Z                 开始检查调用表达式
+2025-04-08T08:46:15.554Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.554Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.555Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.556Z                 检查语句: return 5
+2025-04-08T08:46:15.557Z                   检查值: 5类型是: number
+2025-04-08T08:46:15.558Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()检查完成
+2025-04-08T08:46:15.559Z         检查语句: fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:15.560Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:46:15.560Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:15.561Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.561Z               检查语句:  fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:15.562Z             !!!!!警告  没有找到方法:createFunction1同名的函数变量
+2025-04-08T08:46:15.563Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:15.563Z           该方法需要检查: 
+2025-04-08T08:46:15.564Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:15.565Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:15.565Z               方法模式: 开始检查方法: createFunction1
+2025-04-08T08:46:15.566Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.567Z                 检查方法:  createFunction1  是否含有 if组件
+2025-04-08T08:46:15.568Z                 检查方法:  createFunction1是否有使用到却没有声明的变量
+2025-04-08T08:46:15.569Z                 检查方法: createFunction1是否有函数类型变量
+2025-04-08T08:46:15.570Z                   在类: FunctionFactory 方法: createFunction1中发现函数类型变量: AnonymousMethod-createFunction1-4
+2025-04-08T08:46:15.571Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction1-4
+2025-04-08T08:46:15.572Z                   该方法需要检查
+2025-04-08T08:46:15.572Z                   该方法有方法体
+2025-04-08T08:46:15.573Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction1-4
+2025-04-08T08:46:15.574Z                         检查函数方法调用和被调用的类型  caller: createFunction1  clallee:  AnonymousMethod-createFunction1-4
+2025-04-08T08:46:15.574Z                           监视变量: this所用语句
+2025-04-08T08:46:15.575Z                           this出现在赋值左边
+2025-04-08T08:46:15.576Z                           监视变量: x所用语句
+2025-04-08T08:46:15.576Z                           x出现在赋值左边
+2025-04-08T08:46:15.577Z                           监视变量: $temp0所用语句
+2025-04-08T08:46:15.578Z                           $temp0出现在赋值左边
+2025-04-08T08:46:15.579Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.580Z                       检查方法:  AnonymousMethod-createFunction1-4  是否含有 if组件
+2025-04-08T08:46:15.581Z                       检查方法:  AnonymousMethod-createFunction1-4是否有使用到却没有声明的变量
+2025-04-08T08:46:15.581Z                       检查方法: AnonymousMethod-createFunction1-4是否有函数类型变量
+2025-04-08T08:46:15.582Z                       开始检查调用表达式
+2025-04-08T08:46:15.584Z                       检查语句: x = parameter0: number
+2025-04-08T08:46:15.585Z                         检查值: parameter0: number类型是: number
+2025-04-08T08:46:15.586Z                         值: parameter0: number 是一个引用类型
+2025-04-08T08:46:15.587Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.587Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.588Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.588Z                       检查语句: $temp0 = x + 1
+2025-04-08T08:46:15.589Z                         检查值: x + 1类型是: number
+2025-04-08T08:46:15.590Z                         值: x + 1是一个二元表达式
+2025-04-08T08:46:15.591Z                         检查值: x类型是: number
+2025-04-08T08:46:15.592Z                         检查值: 1类型是: number
+2025-04-08T08:46:15.593Z                       检查语句: return $temp0
+2025-04-08T08:46:15.593Z                         检查值: $temp0类型是: number
+2025-04-08T08:46:15.594Z                   函数方法输入类型是number
+2025-04-08T08:46:15.595Z                   函数方法输出类型是unknown
+2025-04-08T08:46:15.595Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:46:15.596Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:46:15.597Z                     接口文件中 没有 对应的接口类
+2025-04-08T08:46:15.598Z                     接口方法构造完成: @functionTest/funcInterfaceFile: numberTounknownFunction.apply(number)
+2025-04-08T08:46:15.599Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:46:15.599Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:46:15.600Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:46:15.601Z                         开始构造字段
+2025-04-08T08:46:15.602Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:46:15.602Z                     找到函数使用
+2025-04-08T08:46:15.603Z                     在语句: return AnonymousMethod-createFunction1-4之前开始构建函数生成语句
+2025-04-08T08:46:15.603Z                       成功构建语句AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:15.604Z                 开始检查调用表达式
+2025-04-08T08:46:15.604Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.605Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.606Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.607Z                 检查语句: AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:15.607Z                   检查值: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:46:15.608Z                     包含调用表达式: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:15.608Z                     该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.609Z                       检查语句:  AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:15.609Z                     !!!!!警告  没有找到方法:bootstrap$同名的函数变量
+2025-04-08T08:46:15.610Z                   调用方法为: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:46:15.610Z                   该方法需要检查: 
+2025-04-08T08:46:15.610Z                     没有在项目中找到方法: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:46:15.611Z                 检查语句: return AnonymousMethod-createFunction1-4
+2025-04-08T08:46:15.611Z                   检查值: AnonymousMethod-createFunction1-4类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:46:15.612Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()检查完成
+2025-04-08T08:46:15.612Z         检查语句: fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:15.613Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)
+2025-04-08T08:46:15.614Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:15.614Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.614Z               检查语句:  fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:15.615Z             !!!!!警告  没有找到方法:createFunction同名的函数变量
+2025-04-08T08:46:15.616Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:15.616Z           该方法需要检查: 
+2025-04-08T08:46:15.617Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:15.617Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:15.618Z               方法模式: 开始检查方法: createFunction
+2025-04-08T08:46:15.619Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.620Z                 检查方法:  createFunction  是否含有 if组件
+2025-04-08T08:46:15.621Z                 检查方法:  createFunction是否有使用到却没有声明的变量
+2025-04-08T08:46:15.621Z                 检查方法: createFunction是否有函数类型变量
+2025-04-08T08:46:15.622Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: func
+2025-04-08T08:46:15.622Z                   我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:46:15.623Z                   该方法需要检查
+2025-04-08T08:46:15.623Z                   该方法没有方法体
+2025-04-08T08:46:15.624Z                   方法: AnonymousMethod-0检查完成
+2025-04-08T08:46:15.624Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: AnonymousMethod-createFunction-3
+2025-04-08T08:46:15.625Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction-3
+2025-04-08T08:46:15.625Z                   该方法需要检查
+2025-04-08T08:46:15.626Z                   该方法有方法体
+2025-04-08T08:46:15.626Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction-3
+2025-04-08T08:46:15.627Z                         检查函数方法调用和被调用的类型  caller: createFunction  clallee:  AnonymousMethod-createFunction-3
+2025-04-08T08:46:15.627Z                           监视变量: this所用语句
+2025-04-08T08:46:15.628Z                           this出现在赋值左边
+2025-04-08T08:46:15.628Z                           监视变量: x所用语句
+2025-04-08T08:46:15.629Z                           x出现在赋值左边
+2025-04-08T08:46:15.629Z                           监视变量: func所用语句
+2025-04-08T08:46:15.630Z                           监视变量: $temp0所用语句
+2025-04-08T08:46:15.630Z                           $temp0出现在赋值左边
+2025-04-08T08:46:15.631Z                           监视变量: add所用语句
+2025-04-08T08:46:15.631Z                           监视变量: $temp1所用语句
+2025-04-08T08:46:15.632Z                           $temp1出现在赋值左边
+2025-04-08T08:46:15.632Z                           在caller里寻找变量func
+2025-04-08T08:46:15.633Z                           在caller找到变量func
+2025-04-08T08:46:15.634Z                           把原有变量类型替换为@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:15.635Z                           在caller里寻找变量add
+2025-04-08T08:46:15.635Z                           在caller找到变量add
+2025-04-08T08:46:15.636Z                           把原有变量类型替换为number
+2025-04-08T08:46:15.636Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.637Z                       检查方法:  AnonymousMethod-createFunction-3  是否含有 if组件
+2025-04-08T08:46:15.637Z                       检查方法:  AnonymousMethod-createFunction-3是否有使用到却没有声明的变量
+2025-04-08T08:46:15.638Z                       检查方法: AnonymousMethod-createFunction-3是否有函数类型变量
+2025-04-08T08:46:15.638Z                         在类: FunctionFactory 方法: AnonymousMethod-createFunction-3中发现函数类型变量: func
+2025-04-08T08:46:15.639Z                         我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:46:15.639Z                         该方法需要检查
+2025-04-08T08:46:15.639Z                         该方法没有方法体
+2025-04-08T08:46:15.640Z                         方法: AnonymousMethod-0检查完成
+2025-04-08T08:46:15.640Z                       开始检查调用表达式
+2025-04-08T08:46:15.641Z                       检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:15.642Z                         检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:15.642Z                         值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:46:15.643Z                       检查语句: add = parameter1: number
+2025-04-08T08:46:15.644Z                         检查值: parameter1: number类型是: number
+2025-04-08T08:46:15.644Z                         值: parameter1: number 是一个引用类型
+2025-04-08T08:46:15.645Z                       检查语句: x = parameter2: number
+2025-04-08T08:46:15.645Z                         检查值: parameter2: number类型是: number
+2025-04-08T08:46:15.646Z                         值: parameter2: number 是一个引用类型
+2025-04-08T08:46:15.646Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.647Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.648Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.648Z                       检查语句: $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:15.649Z                         检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)类型是: unknown
+2025-04-08T08:46:15.650Z                           包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:15.650Z                           该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.651Z                             检查语句:  $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:15.652Z                             该方法:func来自未知类, 需要进行更换
+2025-04-08T08:46:15.653Z                             找到方法:func同名的函数变量
+2025-04-08T08:46:15.654Z                               换成指针调用:$temp0 = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)>(x)
+2025-04-08T08:46:15.654Z                         调用方法为: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:46:15.655Z                         该方法需要检查: 
+2025-04-08T08:46:15.655Z                           没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:46:15.656Z                         检查值: x类型是: number
+2025-04-08T08:46:15.657Z                       检查语句: $temp1 = $temp0 + add
+2025-04-08T08:46:15.658Z                         检查值: $temp0 + add类型是: unknown
+2025-04-08T08:46:15.659Z                         值: $temp0 + add是一个二元表达式
+2025-04-08T08:46:15.660Z                         检查值: $temp0类型是: number
+2025-04-08T08:46:15.661Z                         检查值: add类型是: number
+2025-04-08T08:46:15.661Z                       检查语句: return $temp1
+2025-04-08T08:46:15.662Z                         检查值: $temp1类型是: unknown
+2025-04-08T08:46:15.663Z                   函数方法输入类型是number
+2025-04-08T08:46:15.664Z                   函数方法输出类型是unknown
+2025-04-08T08:46:15.664Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:46:15.666Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:46:15.667Z                     接口文件中 已有 对应的接口类
+2025-04-08T08:46:15.667Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:46:15.668Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:46:15.669Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:46:15.669Z                         开始构造字段
+2025-04-08T08:46:15.671Z                           构造字段: cap0
+2025-04-08T08:46:15.671Z                           构造字段: cap1
+2025-04-08T08:46:15.672Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:46:15.673Z                 开始检查调用表达式
+2025-04-08T08:46:15.673Z                 检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:15.674Z                   检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:15.674Z                   值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:46:15.675Z                 检查语句: add = parameter1: number
+2025-04-08T08:46:15.675Z                   检查值: parameter1: number类型是: number
+2025-04-08T08:46:15.676Z                   值: parameter1: number 是一个引用类型
+2025-04-08T08:46:15.676Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.677Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.677Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.678Z                 检查语句: return AnonymousMethod-createFunction-3
+2025-04-08T08:46:15.678Z                   检查值: AnonymousMethod-createFunction-3类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3(number)
+2025-04-08T08:46:15.679Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)检查完成
+2025-04-08T08:46:15.679Z           检查值: fun1类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:46:15.680Z           检查值: add类型是: number
+2025-04-08T08:46:15.680Z         检查语句: result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:15.681Z           检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)类型是: unknown
+2025-04-08T08:46:15.682Z             包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:15.683Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.683Z               检查语句:  result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:15.684Z               该方法:fun2来自未知类, 需要进行更换
+2025-04-08T08:46:15.684Z               找到方法:fun2同名的函数变量
+2025-04-08T08:46:15.685Z                 换成指针调用:result = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)>(10)
+2025-04-08T08:46:15.686Z           调用方法为: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:46:15.687Z           该方法需要检查: 
+2025-04-08T08:46:15.688Z             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:46:15.689Z           检查值: 10类型是: number
+2025-04-08T08:46:15.690Z         检查语句: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:15.692Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)类型是: unknown
+2025-04-08T08:46:15.693Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:15.694Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:15.694Z               检查语句:  staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:15.695Z             !!!!!警告  没有找到方法:sink同名的函数变量
+2025-04-08T08:46:15.696Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:15.697Z           该方法需要检查: 
+2025-04-08T08:46:15.698Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:15.698Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:15.699Z               方法模式: 开始检查方法: sink
+2025-04-08T08:46:15.700Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.701Z                 检查方法:  sink  是否含有 if组件
+2025-04-08T08:46:15.702Z                 检查方法:  sink是否有使用到却没有声明的变量
+2025-04-08T08:46:15.702Z                 检查方法: sink是否有函数类型变量
+2025-04-08T08:46:15.703Z                 开始检查调用表达式
+2025-04-08T08:46:15.704Z                 检查语句: input = parameter0: number
+2025-04-08T08:46:15.704Z                   检查值: parameter0: number类型是: number
+2025-04-08T08:46:15.705Z                   值: parameter0: number 是一个引用类型
+2025-04-08T08:46:15.706Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.707Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.707Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.708Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:46:15.708Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)类型是: unknown
+2025-04-08T08:46:15.709Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:46:15.711Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:46:15.712Z                   该方法需要检查: 
+2025-04-08T08:46:15.713Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:46:15.713Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)是一个实例调用
+2025-04-08T08:46:15.714Z                   base: console 类型是: unknown
+2025-04-08T08:46:15.715Z                   检查值: console类型是: unknown
+2025-04-08T08:46:15.715Z                   检查值: input类型是: number
+2025-04-08T08:46:15.716Z                 检查语句: return
+2025-04-08T08:46:15.716Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)检查完成
+2025-04-08T08:46:15.717Z           检查值: result类型是: number
+2025-04-08T08:46:15.717Z         检查语句: return
+2025-04-08T08:46:15.718Z       方法模式: 开始检查方法: AnonymousMethod-0
+2025-04-08T08:46:15.719Z         方法是匿名的跳过
+2025-04-08T08:46:15.719Z       方法模式: 开始检查方法: AnonymousMethod-1
+2025-04-08T08:46:15.720Z         方法是匿名的跳过
+2025-04-08T08:46:15.721Z       方法模式: 开始检查方法: AnonymousMethod-2
+2025-04-08T08:46:15.721Z         方法是匿名的跳过
+2025-04-08T08:46:15.722Z       方法AnonymousMethod-createFunction-3已经被检查过
+2025-04-08T08:46:15.723Z       方法AnonymousMethod-createFunction1-4已经被检查过
+2025-04-08T08:46:15.723Z       方法模式: 开始检查方法: constructor
+2025-04-08T08:46:15.724Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:15.725Z         检查方法:  constructor  是否含有 if组件
+2025-04-08T08:46:15.726Z         检查方法:  constructor是否有使用到却没有声明的变量
+2025-04-08T08:46:15.727Z         检查方法: constructor是否有函数类型变量
+2025-04-08T08:46:15.727Z         开始检查调用表达式
+2025-04-08T08:46:15.728Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.729Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:15.731Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:15.732Z         检查语句: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:46:15.733Z           检查值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()类型是: unknown
+2025-04-08T08:46:15.734Z             包含调用表达式: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:46:15.735Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.@instance_init()
+2025-04-08T08:46:15.736Z           该方法已经被检查: 
+2025-04-08T08:46:15.737Z           值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()是一个实例调用
+2025-04-08T08:46:15.738Z           base: this 类型是: unknown
+2025-04-08T08:46:15.739Z           检查值: this类型是: unknown
+2025-04-08T08:46:15.740Z         检查语句: return
+2025-04-08T08:46:15.741Z       方法sink已经被检查过
+2025-04-08T08:46:15.743Z       方法createInt已经被检查过
+2025-04-08T08:46:15.743Z       方法createFunction已经被检查过
+2025-04-08T08:46:15.745Z       方法createFunction1已经被检查过
+2025-04-08T08:46:15.746Z     开始检查FunctionFactory的实例初始函数@instance_init
+2025-04-08T08:46:15.746Z       该类初始方法没有this变量
+2025-04-08T08:46:15.748Z       添加local变量
+2025-04-08T08:46:15.749Z       FunctionFactory没有父类我们构造一个对java.lang.Object的调用
+2025-04-08T08:46:15.750Z   开始检查文件funcInterfaceFile
+2025-04-08T08:46:15.751Z   this file is interface file 
+2025-04-08T08:46:15.752Z Finish the type check
+2025-04-08T08:46:36.489Z number of classes: 14
+2025-04-08T08:46:36.493Z 开始对项目进行类型检查
+2025-04-08T08:46:36.493Z ------------------------------
+2025-04-08T08:46:36.495Z   开始检查文件functionPass.ts
+2025-04-08T08:46:36.495Z   开始检查类_DEFAULT_ARK_CLASS
+2025-04-08T08:46:36.496Z       方法模式: 开始检查方法: _DEFAULT_ARK_METHOD
+2025-04-08T08:46:36.497Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.498Z         检查方法:  _DEFAULT_ARK_METHOD  是否含有 if组件
+2025-04-08T08:46:36.498Z         检查方法:  _DEFAULT_ARK_METHOD是否有使用到却没有声明的变量
+2025-04-08T08:46:36.499Z         检查方法: _DEFAULT_ARK_METHOD是否有函数类型变量
+2025-04-08T08:46:36.501Z         开始检查调用表达式
+2025-04-08T08:46:36.501Z         检查语句: this = this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:46:36.502Z           检查值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS类型是: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:46:36.503Z           值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS 是一个引用类型
+2025-04-08T08:46:36.504Z         检查语句: return
+2025-04-08T08:46:36.505Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-04-08T08:46:36.505Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-04-08T08:46:36.507Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-04-08T08:46:36.508Z     This class is a default class we need check if it has a init method
+2025-04-08T08:46:36.509Z       This class has no constructor, we build it now
+2025-04-08T08:46:36.511Z   开始检查类FunctionFactory
+2025-04-08T08:46:36.511Z       方法模式: 开始检查方法: @instance_init
+2025-04-08T08:46:36.513Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.513Z         检查方法:  @instance_init  是否含有 if组件
+2025-04-08T08:46:36.514Z         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-04-08T08:46:36.515Z         检查方法: @instance_init是否有函数类型变量
+2025-04-08T08:46:36.516Z         开始检查调用表达式
+2025-04-08T08:46:36.517Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.517Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.518Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.518Z         检查语句: return
+2025-04-08T08:46:36.519Z       方法模式: 开始检查方法: @static_init
+2025-04-08T08:46:36.519Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.520Z         检查方法:  @static_init  是否含有 if组件
+2025-04-08T08:46:36.520Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-04-08T08:46:36.521Z         检查方法: @static_init是否有函数类型变量
+2025-04-08T08:46:36.522Z         开始检查调用表达式
+2025-04-08T08:46:36.522Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.523Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.525Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.526Z         检查语句: return
+2025-04-08T08:46:36.526Z       方法模式: 开始检查方法: main
+2025-04-08T08:46:36.527Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.527Z         检查方法:  main  是否含有 if组件
+2025-04-08T08:46:36.528Z         检查方法:  main是否有使用到却没有声明的变量
+2025-04-08T08:46:36.529Z         检查方法: main是否有函数类型变量
+2025-04-08T08:46:36.529Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun1
+2025-04-08T08:46:36.531Z           我们在项目中发现了所指的方法AnonymousMethod-2
+2025-04-08T08:46:36.531Z           该方法需要检查
+2025-04-08T08:46:36.532Z           该方法没有方法体
+2025-04-08T08:46:36.533Z           方法: AnonymousMethod-2检查完成
+2025-04-08T08:46:36.533Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun2
+2025-04-08T08:46:36.534Z           我们在项目中发现了所指的方法AnonymousMethod-1
+2025-04-08T08:46:36.535Z           该方法需要检查
+2025-04-08T08:46:36.535Z           该方法没有方法体
+2025-04-08T08:46:36.536Z           方法: AnonymousMethod-1检查完成
+2025-04-08T08:46:36.536Z         开始检查调用表达式
+2025-04-08T08:46:36.537Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.538Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.538Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.539Z         检查语句: add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:36.539Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()类型是: number
+2025-04-08T08:46:36.541Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:36.543Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.544Z               检查语句:  add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:46:36.545Z             !!!!!警告  没有找到方法:createInt同名的函数变量
+2025-04-08T08:46:36.545Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:36.547Z           该方法需要检查: 
+2025-04-08T08:46:36.548Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:36.548Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:46:36.549Z               方法模式: 开始检查方法: createInt
+2025-04-08T08:46:36.549Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.550Z                 检查方法:  createInt  是否含有 if组件
+2025-04-08T08:46:36.550Z                 检查方法:  createInt是否有使用到却没有声明的变量
+2025-04-08T08:46:36.551Z                 检查方法: createInt是否有函数类型变量
+2025-04-08T08:46:36.552Z                 开始检查调用表达式
+2025-04-08T08:46:36.552Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.553Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.554Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.555Z                 检查语句: return 5
+2025-04-08T08:46:36.555Z                   检查值: 5类型是: number
+2025-04-08T08:46:36.557Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()检查完成
+2025-04-08T08:46:36.558Z         检查语句: fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:36.559Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:46:36.559Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:36.560Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.561Z               检查语句:  fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:46:36.561Z             !!!!!警告  没有找到方法:createFunction1同名的函数变量
+2025-04-08T08:46:36.562Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:36.563Z           该方法需要检查: 
+2025-04-08T08:46:36.563Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:36.564Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:46:36.564Z               方法模式: 开始检查方法: createFunction1
+2025-04-08T08:46:36.565Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.566Z                 检查方法:  createFunction1  是否含有 if组件
+2025-04-08T08:46:36.566Z                 检查方法:  createFunction1是否有使用到却没有声明的变量
+2025-04-08T08:46:36.567Z                 检查方法: createFunction1是否有函数类型变量
+2025-04-08T08:46:36.568Z                   在类: FunctionFactory 方法: createFunction1中发现函数类型变量: AnonymousMethod-createFunction1-4
+2025-04-08T08:46:36.568Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction1-4
+2025-04-08T08:46:36.569Z                   该方法需要检查
+2025-04-08T08:46:36.570Z                   该方法有方法体
+2025-04-08T08:46:36.571Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction1-4
+2025-04-08T08:46:36.572Z                         检查函数方法调用和被调用的类型  caller: createFunction1  clallee:  AnonymousMethod-createFunction1-4
+2025-04-08T08:46:36.572Z                           监视变量: this所用语句
+2025-04-08T08:46:36.573Z                           this出现在赋值左边
+2025-04-08T08:46:36.573Z                           监视变量: x所用语句
+2025-04-08T08:46:36.574Z                           x出现在赋值左边
+2025-04-08T08:46:36.575Z                           监视变量: $temp0所用语句
+2025-04-08T08:46:36.575Z                           $temp0出现在赋值左边
+2025-04-08T08:46:36.577Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.577Z                       检查方法:  AnonymousMethod-createFunction1-4  是否含有 if组件
+2025-04-08T08:46:36.578Z                       检查方法:  AnonymousMethod-createFunction1-4是否有使用到却没有声明的变量
+2025-04-08T08:46:36.579Z                       检查方法: AnonymousMethod-createFunction1-4是否有函数类型变量
+2025-04-08T08:46:36.580Z                       开始检查调用表达式
+2025-04-08T08:46:36.580Z                       检查语句: x = parameter0: number
+2025-04-08T08:46:36.582Z                         检查值: parameter0: number类型是: number
+2025-04-08T08:46:36.582Z                         值: parameter0: number 是一个引用类型
+2025-04-08T08:46:36.583Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.583Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.584Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.585Z                       检查语句: $temp0 = x + 1
+2025-04-08T08:46:36.585Z                         检查值: x + 1类型是: number
+2025-04-08T08:46:36.586Z                         值: x + 1是一个二元表达式
+2025-04-08T08:46:36.588Z                         检查值: x类型是: number
+2025-04-08T08:46:36.588Z                         检查值: 1类型是: number
+2025-04-08T08:46:36.589Z                       检查语句: return $temp0
+2025-04-08T08:46:36.590Z                         检查值: $temp0类型是: number
+2025-04-08T08:46:36.591Z                   函数方法输入类型是number
+2025-04-08T08:46:36.591Z                   函数方法输出类型是unknown
+2025-04-08T08:46:36.592Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:46:36.593Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:46:36.594Z                     接口文件中 没有 对应的接口类
+2025-04-08T08:46:36.595Z                     接口方法构造完成: @functionTest/funcInterfaceFile: numberTounknownFunction.apply(number)
+2025-04-08T08:46:36.596Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:46:36.596Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:46:36.597Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:46:36.597Z                         开始构造字段
+2025-04-08T08:46:36.599Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:46:36.599Z                     找到函数使用
+2025-04-08T08:46:36.600Z                     在语句: return AnonymousMethod-createFunction1-4之前开始构建函数生成语句
+2025-04-08T08:46:36.601Z                       成功构建语句AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:36.601Z                 开始检查调用表达式
+2025-04-08T08:46:36.602Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.602Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.603Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.603Z                 检查语句: AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:36.604Z                   检查值: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:46:36.605Z                     包含调用表达式: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:36.605Z                     该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.605Z                       检查语句:  AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:46:36.606Z                     !!!!!警告  没有找到方法:bootstrap$同名的函数变量
+2025-04-08T08:46:36.606Z                   调用方法为: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:46:36.608Z                   该方法需要检查: 
+2025-04-08T08:46:36.609Z                     没有在项目中找到方法: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:46:36.610Z                 检查语句: return AnonymousMethod-createFunction1-4
+2025-04-08T08:46:36.610Z                   检查值: AnonymousMethod-createFunction1-4类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:46:36.612Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()检查完成
+2025-04-08T08:46:36.613Z         检查语句: fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:36.614Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)
+2025-04-08T08:46:36.615Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:36.616Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.616Z               检查语句:  fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:46:36.617Z             !!!!!警告  没有找到方法:createFunction同名的函数变量
+2025-04-08T08:46:36.618Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:36.618Z           该方法需要检查: 
+2025-04-08T08:46:36.619Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:36.620Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:46:36.621Z               方法模式: 开始检查方法: createFunction
+2025-04-08T08:46:36.621Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.623Z                 检查方法:  createFunction  是否含有 if组件
+2025-04-08T08:46:36.623Z                 检查方法:  createFunction是否有使用到却没有声明的变量
+2025-04-08T08:46:36.624Z                 检查方法: createFunction是否有函数类型变量
+2025-04-08T08:46:36.625Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: func
+2025-04-08T08:46:36.626Z                   我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:46:36.626Z                   该方法需要检查
+2025-04-08T08:46:36.627Z                   该方法没有方法体
+2025-04-08T08:46:36.627Z                   方法: AnonymousMethod-0检查完成
+2025-04-08T08:46:36.628Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: AnonymousMethod-createFunction-3
+2025-04-08T08:46:36.629Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction-3
+2025-04-08T08:46:36.629Z                   该方法需要检查
+2025-04-08T08:46:36.630Z                   该方法有方法体
+2025-04-08T08:46:36.630Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction-3
+2025-04-08T08:46:36.631Z                         检查函数方法调用和被调用的类型  caller: createFunction  clallee:  AnonymousMethod-createFunction-3
+2025-04-08T08:46:36.632Z                           监视变量: this所用语句
+2025-04-08T08:46:36.632Z                           this出现在赋值左边
+2025-04-08T08:46:36.633Z                           监视变量: x所用语句
+2025-04-08T08:46:36.634Z                           x出现在赋值左边
+2025-04-08T08:46:36.634Z                           监视变量: func所用语句
+2025-04-08T08:46:36.635Z                           监视变量: $temp0所用语句
+2025-04-08T08:46:36.635Z                           $temp0出现在赋值左边
+2025-04-08T08:46:36.636Z                           监视变量: add所用语句
+2025-04-08T08:46:36.637Z                           监视变量: $temp1所用语句
+2025-04-08T08:46:36.638Z                           $temp1出现在赋值左边
+2025-04-08T08:46:36.639Z                           在caller里寻找变量func
+2025-04-08T08:46:36.640Z                           在caller找到变量func
+2025-04-08T08:46:36.641Z                           把原有变量类型替换为@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:36.641Z                           在caller里寻找变量add
+2025-04-08T08:46:36.643Z                           在caller找到变量add
+2025-04-08T08:46:36.644Z                           把原有变量类型替换为number
+2025-04-08T08:46:36.644Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.645Z                       检查方法:  AnonymousMethod-createFunction-3  是否含有 if组件
+2025-04-08T08:46:36.646Z                       检查方法:  AnonymousMethod-createFunction-3是否有使用到却没有声明的变量
+2025-04-08T08:46:36.646Z                       检查方法: AnonymousMethod-createFunction-3是否有函数类型变量
+2025-04-08T08:46:36.647Z                         在类: FunctionFactory 方法: AnonymousMethod-createFunction-3中发现函数类型变量: func
+2025-04-08T08:46:36.647Z                         我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:46:36.648Z                         该方法需要检查
+2025-04-08T08:46:36.648Z                         该方法没有方法体
+2025-04-08T08:46:36.649Z                         方法: AnonymousMethod-0检查完成
+2025-04-08T08:46:36.650Z                       开始检查调用表达式
+2025-04-08T08:46:36.650Z                       检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:36.651Z                         检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:36.651Z                         值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:46:36.652Z                       检查语句: add = parameter1: number
+2025-04-08T08:46:36.653Z                         检查值: parameter1: number类型是: number
+2025-04-08T08:46:36.653Z                         值: parameter1: number 是一个引用类型
+2025-04-08T08:46:36.654Z                       检查语句: x = parameter2: number
+2025-04-08T08:46:36.655Z                         检查值: parameter2: number类型是: number
+2025-04-08T08:46:36.656Z                         值: parameter2: number 是一个引用类型
+2025-04-08T08:46:36.657Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.658Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.660Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.661Z                       检查语句: $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:36.663Z                         检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)类型是: unknown
+2025-04-08T08:46:36.664Z                           包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:36.664Z                           该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.665Z                             检查语句:  $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:46:36.666Z                             该方法:func来自未知类, 需要进行更换
+2025-04-08T08:46:36.667Z                             找到方法:func同名的函数变量
+2025-04-08T08:46:36.668Z                               换成指针调用:$temp0 = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)>(x)
+2025-04-08T08:46:36.669Z                         调用方法为: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:46:36.670Z                         该方法需要检查: 
+2025-04-08T08:46:36.670Z                           没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:46:36.671Z                         检查值: x类型是: number
+2025-04-08T08:46:36.672Z                       检查语句: $temp1 = $temp0 + add
+2025-04-08T08:46:36.673Z                         检查值: $temp0 + add类型是: unknown
+2025-04-08T08:46:36.673Z                         值: $temp0 + add是一个二元表达式
+2025-04-08T08:46:36.674Z                         检查值: $temp0类型是: number
+2025-04-08T08:46:36.675Z                         检查值: add类型是: number
+2025-04-08T08:46:36.675Z                       检查语句: return $temp1
+2025-04-08T08:46:36.676Z                         检查值: $temp1类型是: unknown
+2025-04-08T08:46:36.677Z                   函数方法输入类型是number
+2025-04-08T08:46:36.678Z                   函数方法输出类型是unknown
+2025-04-08T08:46:36.678Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:46:36.679Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:46:36.679Z                     接口文件中 已有 对应的接口类
+2025-04-08T08:46:36.680Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:46:36.681Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:46:36.681Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:46:36.682Z                         开始构造字段
+2025-04-08T08:46:36.683Z                           构造字段: cap0
+2025-04-08T08:46:36.683Z                           构造字段: cap1
+2025-04-08T08:46:36.684Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:46:36.685Z                 开始检查调用表达式
+2025-04-08T08:46:36.685Z                 检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:36.686Z                   检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:46:36.686Z                   值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:46:36.687Z                 检查语句: add = parameter1: number
+2025-04-08T08:46:36.687Z                   检查值: parameter1: number类型是: number
+2025-04-08T08:46:36.688Z                   值: parameter1: number 是一个引用类型
+2025-04-08T08:46:36.688Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.689Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.689Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.690Z                 检查语句: return AnonymousMethod-createFunction-3
+2025-04-08T08:46:36.690Z                   检查值: AnonymousMethod-createFunction-3类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3(number)
+2025-04-08T08:46:36.691Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)检查完成
+2025-04-08T08:46:36.692Z           检查值: fun1类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:46:36.693Z           检查值: add类型是: number
+2025-04-08T08:46:36.693Z         检查语句: result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:36.694Z           检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)类型是: unknown
+2025-04-08T08:46:36.695Z             包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:36.695Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.696Z               检查语句:  result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:46:36.697Z               该方法:fun2来自未知类, 需要进行更换
+2025-04-08T08:46:36.697Z               找到方法:fun2同名的函数变量
+2025-04-08T08:46:36.698Z                 换成指针调用:result = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)>(10)
+2025-04-08T08:46:36.698Z           调用方法为: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:46:36.699Z           该方法需要检查: 
+2025-04-08T08:46:36.700Z             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:46:36.700Z           检查值: 10类型是: number
+2025-04-08T08:46:36.701Z         检查语句: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:36.702Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)类型是: unknown
+2025-04-08T08:46:36.703Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:36.704Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:46:36.705Z               检查语句:  staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:46:36.705Z             !!!!!警告  没有找到方法:sink同名的函数变量
+2025-04-08T08:46:36.706Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:36.707Z           该方法需要检查: 
+2025-04-08T08:46:36.707Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:36.708Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:46:36.708Z               方法模式: 开始检查方法: sink
+2025-04-08T08:46:36.709Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.709Z                 检查方法:  sink  是否含有 if组件
+2025-04-08T08:46:36.710Z                 检查方法:  sink是否有使用到却没有声明的变量
+2025-04-08T08:46:36.710Z                 检查方法: sink是否有函数类型变量
+2025-04-08T08:46:36.711Z                 开始检查调用表达式
+2025-04-08T08:46:36.712Z                 检查语句: input = parameter0: number
+2025-04-08T08:46:36.712Z                   检查值: parameter0: number类型是: number
+2025-04-08T08:46:36.713Z                   值: parameter0: number 是一个引用类型
+2025-04-08T08:46:36.713Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.714Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.714Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.715Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:46:36.715Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)类型是: unknown
+2025-04-08T08:46:36.716Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:46:36.716Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:46:36.717Z                   该方法需要检查: 
+2025-04-08T08:46:36.718Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:46:36.718Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)是一个实例调用
+2025-04-08T08:46:36.719Z                   base: console 类型是: unknown
+2025-04-08T08:46:36.719Z                   检查值: console类型是: unknown
+2025-04-08T08:46:36.720Z                   检查值: input类型是: number
+2025-04-08T08:46:36.721Z                 检查语句: return
+2025-04-08T08:46:36.721Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)检查完成
+2025-04-08T08:46:36.722Z           检查值: result类型是: number
+2025-04-08T08:46:36.722Z         检查语句: return
+2025-04-08T08:46:36.723Z       方法模式: 开始检查方法: AnonymousMethod-0
+2025-04-08T08:46:36.723Z         方法是匿名的跳过
+2025-04-08T08:46:36.724Z       方法模式: 开始检查方法: AnonymousMethod-1
+2025-04-08T08:46:36.725Z         方法是匿名的跳过
+2025-04-08T08:46:36.725Z       方法模式: 开始检查方法: AnonymousMethod-2
+2025-04-08T08:46:36.726Z         方法是匿名的跳过
+2025-04-08T08:46:36.726Z       方法AnonymousMethod-createFunction-3已经被检查过
+2025-04-08T08:46:36.727Z       方法AnonymousMethod-createFunction1-4已经被检查过
+2025-04-08T08:46:36.727Z       方法模式: 开始检查方法: constructor
+2025-04-08T08:46:36.728Z         开始检查方法是否含有三元表达式
+2025-04-08T08:46:36.728Z         检查方法:  constructor  是否含有 if组件
+2025-04-08T08:46:36.729Z         检查方法:  constructor是否有使用到却没有声明的变量
+2025-04-08T08:46:36.729Z         检查方法: constructor是否有函数类型变量
+2025-04-08T08:46:36.730Z         开始检查调用表达式
+2025-04-08T08:46:36.730Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.731Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:46:36.731Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:46:36.732Z         检查语句: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:46:36.732Z           检查值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()类型是: unknown
+2025-04-08T08:46:36.733Z             包含调用表达式: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:46:36.734Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.@instance_init()
+2025-04-08T08:46:36.734Z           该方法已经被检查: 
+2025-04-08T08:46:36.734Z           值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()是一个实例调用
+2025-04-08T08:46:36.735Z           base: this 类型是: unknown
+2025-04-08T08:46:36.736Z           检查值: this类型是: unknown
+2025-04-08T08:46:36.736Z         检查语句: return
+2025-04-08T08:46:36.736Z       方法sink已经被检查过
+2025-04-08T08:46:36.738Z       方法createInt已经被检查过
+2025-04-08T08:46:36.738Z       方法createFunction已经被检查过
+2025-04-08T08:46:36.739Z       方法createFunction1已经被检查过
+2025-04-08T08:46:36.739Z     开始检查FunctionFactory的实例初始函数@instance_init
+2025-04-08T08:46:36.740Z       该类初始方法没有this变量
+2025-04-08T08:46:36.741Z       添加local变量
+2025-04-08T08:46:36.741Z       FunctionFactory没有父类我们构造一个对java.lang.Object的调用
+2025-04-08T08:46:36.742Z   开始检查文件funcInterfaceFile
+2025-04-08T08:46:36.742Z   this file is interface file 
+2025-04-08T08:46:36.743Z Finish the type check
+2025-04-08T08:49:49.681Z number of classes: 14
+2025-04-08T08:49:49.686Z 开始对项目进行类型检查
+2025-04-08T08:49:49.686Z ------------------------------
+2025-04-08T08:49:49.688Z   开始检查文件functionPass.ts
+2025-04-08T08:49:49.689Z   开始检查类_DEFAULT_ARK_CLASS
+2025-04-08T08:49:49.690Z       方法模式: 开始检查方法: _DEFAULT_ARK_METHOD
+2025-04-08T08:49:49.690Z         开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.691Z         检查方法:  _DEFAULT_ARK_METHOD  是否含有 if组件
+2025-04-08T08:49:49.692Z         检查方法:  _DEFAULT_ARK_METHOD是否有使用到却没有声明的变量
+2025-04-08T08:49:49.693Z         检查方法: _DEFAULT_ARK_METHOD是否有函数类型变量
+2025-04-08T08:49:49.694Z         开始检查调用表达式
+2025-04-08T08:49:49.695Z         检查语句: this = this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:49:49.695Z           检查值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS类型是: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS
+2025-04-08T08:49:49.697Z           值: this: @functionTest/functionPass.ts: _DEFAULT_ARK_CLASS 是一个引用类型
+2025-04-08T08:49:49.698Z         检查语句: return
+2025-04-08T08:49:49.699Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-04-08T08:49:49.699Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-04-08T08:49:49.700Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-04-08T08:49:49.701Z     This class is a default class we need check if it has a init method
+2025-04-08T08:49:49.701Z       This class has no constructor, we build it now
+2025-04-08T08:49:49.702Z   开始检查类FunctionFactory
+2025-04-08T08:49:49.703Z       方法模式: 开始检查方法: @instance_init
+2025-04-08T08:49:49.704Z         开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.705Z         检查方法:  @instance_init  是否含有 if组件
+2025-04-08T08:49:49.705Z         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-04-08T08:49:49.706Z         检查方法: @instance_init是否有函数类型变量
+2025-04-08T08:49:49.707Z         开始检查调用表达式
+2025-04-08T08:49:49.708Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.708Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.709Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.709Z         检查语句: return
+2025-04-08T08:49:49.710Z       方法模式: 开始检查方法: @static_init
+2025-04-08T08:49:49.710Z         开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.711Z         检查方法:  @static_init  是否含有 if组件
+2025-04-08T08:49:49.712Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-04-08T08:49:49.713Z         检查方法: @static_init是否有函数类型变量
+2025-04-08T08:49:49.714Z         开始检查调用表达式
+2025-04-08T08:49:49.715Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.716Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.716Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.717Z         检查语句: return
+2025-04-08T08:49:49.718Z       方法模式: 开始检查方法: main
+2025-04-08T08:49:49.719Z         开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.720Z         检查方法:  main  是否含有 if组件
+2025-04-08T08:49:49.721Z         检查方法:  main是否有使用到却没有声明的变量
+2025-04-08T08:49:49.721Z         检查方法: main是否有函数类型变量
+2025-04-08T08:49:49.722Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun1
+2025-04-08T08:49:49.722Z           我们在项目中发现了所指的方法AnonymousMethod-2
+2025-04-08T08:49:49.723Z           该方法需要检查
+2025-04-08T08:49:49.724Z           该方法没有方法体
+2025-04-08T08:49:49.724Z           方法: AnonymousMethod-2检查完成
+2025-04-08T08:49:49.725Z           在类: FunctionFactory 方法: main中发现函数类型变量: fun2
+2025-04-08T08:49:49.726Z           我们在项目中发现了所指的方法AnonymousMethod-1
+2025-04-08T08:49:49.726Z           该方法需要检查
+2025-04-08T08:49:49.727Z           该方法没有方法体
+2025-04-08T08:49:49.728Z           方法: AnonymousMethod-1检查完成
+2025-04-08T08:49:49.730Z         开始检查调用表达式
+2025-04-08T08:49:49.732Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.733Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.734Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.735Z         检查语句: add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:49:49.735Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()类型是: number
+2025-04-08T08:49:49.736Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:49:49.737Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.737Z               检查语句:  add = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createInt()>()
+2025-04-08T08:49:49.738Z             !!!!!警告  没有找到方法:createInt同名的函数变量
+2025-04-08T08:49:49.738Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:49:49.739Z           该方法需要检查: 
+2025-04-08T08:49:49.740Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:49:49.740Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()
+2025-04-08T08:49:49.741Z               方法模式: 开始检查方法: createInt
+2025-04-08T08:49:49.741Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.742Z                 检查方法:  createInt  是否含有 if组件
+2025-04-08T08:49:49.743Z                 检查方法:  createInt是否有使用到却没有声明的变量
+2025-04-08T08:49:49.743Z                 检查方法: createInt是否有函数类型变量
+2025-04-08T08:49:49.744Z                 开始检查调用表达式
+2025-04-08T08:49:49.744Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.745Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.746Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.747Z                 检查语句: return 5
+2025-04-08T08:49:49.748Z                   检查值: 5类型是: number
+2025-04-08T08:49:49.749Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createInt()检查完成
+2025-04-08T08:49:49.750Z         检查语句: fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:49:49.750Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:49:49.751Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:49:49.752Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.752Z               检查语句:  fun1 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()>()
+2025-04-08T08:49:49.753Z             !!!!!警告  没有找到方法:createFunction1同名的函数变量
+2025-04-08T08:49:49.754Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:49:49.754Z           该方法需要检查: 
+2025-04-08T08:49:49.755Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:49:49.755Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()
+2025-04-08T08:49:49.756Z               方法模式: 开始检查方法: createFunction1
+2025-04-08T08:49:49.756Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.757Z                 检查方法:  createFunction1  是否含有 if组件
+2025-04-08T08:49:49.757Z                 检查方法:  createFunction1是否有使用到却没有声明的变量
+2025-04-08T08:49:49.758Z                 检查方法: createFunction1是否有函数类型变量
+2025-04-08T08:49:49.759Z                   在类: FunctionFactory 方法: createFunction1中发现函数类型变量: AnonymousMethod-createFunction1-4
+2025-04-08T08:49:49.759Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction1-4
+2025-04-08T08:49:49.759Z                   该方法需要检查
+2025-04-08T08:49:49.760Z                   该方法有方法体
+2025-04-08T08:49:49.761Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction1-4
+2025-04-08T08:49:49.762Z                         检查函数方法调用和被调用的类型  caller: createFunction1  clallee:  AnonymousMethod-createFunction1-4
+2025-04-08T08:49:49.762Z                           监视变量: this所用语句
+2025-04-08T08:49:49.763Z                           this出现在赋值左边
+2025-04-08T08:49:49.764Z                           监视变量: x所用语句
+2025-04-08T08:49:49.767Z                           x出现在赋值左边
+2025-04-08T08:49:49.768Z                           监视变量: $temp0所用语句
+2025-04-08T08:49:49.769Z                           $temp0出现在赋值左边
+2025-04-08T08:49:49.770Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.771Z                       检查方法:  AnonymousMethod-createFunction1-4  是否含有 if组件
+2025-04-08T08:49:49.772Z                       检查方法:  AnonymousMethod-createFunction1-4是否有使用到却没有声明的变量
+2025-04-08T08:49:49.772Z                       检查方法: AnonymousMethod-createFunction1-4是否有函数类型变量
+2025-04-08T08:49:49.773Z                       开始检查调用表达式
+2025-04-08T08:49:49.774Z                       检查语句: x = parameter0: number
+2025-04-08T08:49:49.775Z                         检查值: parameter0: number类型是: number
+2025-04-08T08:49:49.775Z                         值: parameter0: number 是一个引用类型
+2025-04-08T08:49:49.776Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.779Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.780Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.781Z                       检查语句: $temp0 = x + 1
+2025-04-08T08:49:49.783Z                         检查值: x + 1类型是: number
+2025-04-08T08:49:49.784Z                         值: x + 1是一个二元表达式
+2025-04-08T08:49:49.784Z                         检查值: x类型是: number
+2025-04-08T08:49:49.785Z                         检查值: 1类型是: number
+2025-04-08T08:49:49.786Z                       检查语句: return $temp0
+2025-04-08T08:49:49.786Z                         检查值: $temp0类型是: number
+2025-04-08T08:49:49.787Z                   函数方法输入类型是number
+2025-04-08T08:49:49.788Z                   函数方法输出类型是unknown
+2025-04-08T08:49:49.788Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:49:49.789Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:49:49.790Z                     接口文件中 没有 对应的接口类
+2025-04-08T08:49:49.790Z                     接口方法构造完成: @functionTest/funcInterfaceFile: numberTounknownFunction.apply(number)
+2025-04-08T08:49:49.791Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:49:49.792Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:49:49.794Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$
+2025-04-08T08:49:49.795Z                         开始构造字段
+2025-04-08T08:49:49.796Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:49:49.798Z                     找到函数使用
+2025-04-08T08:49:49.799Z                     在语句: return AnonymousMethod-createFunction1-4之前开始构建函数生成语句
+2025-04-08T08:49:49.800Z                       成功构建语句AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:49:49.801Z                 开始检查调用表达式
+2025-04-08T08:49:49.801Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.802Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.803Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.804Z                 检查语句: AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:49:49.804Z                   检查值: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:49:49.805Z                     包含调用表达式: staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:49:49.805Z                     该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.806Z                       检查语句:  AnonymousMethod-createFunction1-4 = staticinvoke <@functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()>()
+2025-04-08T08:49:49.807Z                     !!!!!警告  没有找到方法:bootstrap$同名的函数变量
+2025-04-08T08:49:49.807Z                   调用方法为: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:49:49.808Z                   该方法需要检查: 
+2025-04-08T08:49:49.809Z                     没有在项目中找到方法: @functionTest/funcInterfaceFile: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4$.[static]bootstrap$()
+2025-04-08T08:49:49.809Z                 检查语句: return AnonymousMethod-createFunction1-4
+2025-04-08T08:49:49.810Z                   检查值: AnonymousMethod-createFunction1-4类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction1-4(number)
+2025-04-08T08:49:49.810Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction1()检查完成
+2025-04-08T08:49:49.811Z         检查语句: fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:49:49.813Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)
+2025-04-08T08:49:49.813Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:49:49.814Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.814Z               检查语句:  fun2 = staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)>(fun1, add)
+2025-04-08T08:49:49.815Z             !!!!!警告  没有找到方法:createFunction同名的函数变量
+2025-04-08T08:49:49.816Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:49:49.816Z           该方法需要检查: 
+2025-04-08T08:49:49.817Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:49:49.817Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)
+2025-04-08T08:49:49.818Z               方法模式: 开始检查方法: createFunction
+2025-04-08T08:49:49.819Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.820Z                 检查方法:  createFunction  是否含有 if组件
+2025-04-08T08:49:49.820Z                 检查方法:  createFunction是否有使用到却没有声明的变量
+2025-04-08T08:49:49.821Z                 检查方法: createFunction是否有函数类型变量
+2025-04-08T08:49:49.822Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: func
+2025-04-08T08:49:49.822Z                   我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:49:49.823Z                   该方法需要检查
+2025-04-08T08:49:49.824Z                   该方法没有方法体
+2025-04-08T08:49:49.825Z                   方法: AnonymousMethod-0检查完成
+2025-04-08T08:49:49.825Z                   在类: FunctionFactory 方法: createFunction中发现函数类型变量: AnonymousMethod-createFunction-3
+2025-04-08T08:49:49.826Z                   我们在项目中发现了所指的方法AnonymousMethod-createFunction-3
+2025-04-08T08:49:49.826Z                   该方法需要检查
+2025-04-08T08:49:49.827Z                   该方法有方法体
+2025-04-08T08:49:49.828Z                     匿名函数模式: 开始检查方法: AnonymousMethod-createFunction-3
+2025-04-08T08:49:49.829Z                         检查函数方法调用和被调用的类型  caller: createFunction  clallee:  AnonymousMethod-createFunction-3
+2025-04-08T08:49:49.829Z                           监视变量: this所用语句
+2025-04-08T08:49:49.830Z                           this出现在赋值左边
+2025-04-08T08:49:49.830Z                           监视变量: x所用语句
+2025-04-08T08:49:49.831Z                           x出现在赋值左边
+2025-04-08T08:49:49.832Z                           监视变量: func所用语句
+2025-04-08T08:49:49.833Z                           监视变量: $temp0所用语句
+2025-04-08T08:49:49.833Z                           $temp0出现在赋值左边
+2025-04-08T08:49:49.834Z                           监视变量: add所用语句
+2025-04-08T08:49:49.834Z                           监视变量: $temp1所用语句
+2025-04-08T08:49:49.835Z                           $temp1出现在赋值左边
+2025-04-08T08:49:49.836Z                           在caller里寻找变量func
+2025-04-08T08:49:49.836Z                           在caller找到变量func
+2025-04-08T08:49:49.837Z                           把原有变量类型替换为@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:49:49.837Z                           在caller里寻找变量add
+2025-04-08T08:49:49.838Z                           在caller找到变量add
+2025-04-08T08:49:49.839Z                           把原有变量类型替换为number
+2025-04-08T08:49:49.840Z                       开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.840Z                       检查方法:  AnonymousMethod-createFunction-3  是否含有 if组件
+2025-04-08T08:49:49.841Z                       检查方法:  AnonymousMethod-createFunction-3是否有使用到却没有声明的变量
+2025-04-08T08:49:49.842Z                       检查方法: AnonymousMethod-createFunction-3是否有函数类型变量
+2025-04-08T08:49:49.842Z                         在类: FunctionFactory 方法: AnonymousMethod-createFunction-3中发现函数类型变量: func
+2025-04-08T08:49:49.843Z                         我们在项目中发现了所指的方法AnonymousMethod-0
+2025-04-08T08:49:49.843Z                         该方法需要检查
+2025-04-08T08:49:49.844Z                         该方法没有方法体
+2025-04-08T08:49:49.845Z                         方法: AnonymousMethod-0检查完成
+2025-04-08T08:49:49.846Z                       开始检查调用表达式
+2025-04-08T08:49:49.846Z                       检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:49:49.847Z                         检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:49:49.848Z                         值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:49:49.848Z                       检查语句: add = parameter1: number
+2025-04-08T08:49:49.849Z                         检查值: parameter1: number类型是: number
+2025-04-08T08:49:49.849Z                         值: parameter1: number 是一个引用类型
+2025-04-08T08:49:49.850Z                       检查语句: x = parameter2: number
+2025-04-08T08:49:49.850Z                         检查值: parameter2: number类型是: number
+2025-04-08T08:49:49.851Z                         值: parameter2: number 是一个引用类型
+2025-04-08T08:49:49.851Z                       检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.852Z                         检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.852Z                         值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.853Z                       检查语句: $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:49:49.854Z                         检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)类型是: unknown
+2025-04-08T08:49:49.854Z                           包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:49:49.855Z                           该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.856Z                             检查语句:  $temp0 = staticinvoke <@_UnknownProjectName/_UnknownFileName: .func()>(x)
+2025-04-08T08:49:49.857Z                             该方法:func来自未知类, 需要进行更换
+2025-04-08T08:49:49.857Z                             找到方法:func同名的函数变量
+2025-04-08T08:49:49.858Z                               换成指针调用:$temp0 = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)>(x)
+2025-04-08T08:49:49.859Z                         调用方法为: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:49:49.860Z                         该方法需要检查: 
+2025-04-08T08:49:49.861Z                           没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .func()
+2025-04-08T08:49:49.862Z                         检查值: x类型是: number
+2025-04-08T08:49:49.862Z                       检查语句: $temp1 = $temp0 + add
+2025-04-08T08:49:49.863Z                         检查值: $temp0 + add类型是: unknown
+2025-04-08T08:49:49.864Z                         值: $temp0 + add是一个二元表达式
+2025-04-08T08:49:49.864Z                         检查值: $temp0类型是: number
+2025-04-08T08:49:49.865Z                         检查值: add类型是: number
+2025-04-08T08:49:49.865Z                       检查语句: return $temp1
+2025-04-08T08:49:49.867Z                         检查值: $temp1类型是: unknown
+2025-04-08T08:49:49.868Z                   函数方法输入类型是number
+2025-04-08T08:49:49.869Z                   函数方法输出类型是unknown
+2025-04-08T08:49:49.870Z                     找到 函数接口文件 开始构造函数对应接口
+2025-04-08T08:49:49.871Z                     构造的接口名字为: numberTounknownFunction
+2025-04-08T08:49:49.872Z                     接口文件中 已有 对应的接口类
+2025-04-08T08:49:49.873Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:49:49.874Z                       找到 函数接口文件 接下来开始构造函数类
+2025-04-08T08:49:49.875Z                       开始构造函数类:@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3$
+2025-04-08T08:49:49.875Z                         开始构造字段
+2025-04-08T08:49:49.877Z                           构造字段: cap0
+2025-04-08T08:49:49.877Z                           构造字段: cap1
+2025-04-08T08:49:49.878Z                   没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置
+2025-04-08T08:49:49.879Z                 开始检查调用表达式
+2025-04-08T08:49:49.880Z                 检查语句: func = parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:49:49.880Z                   检查值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number)
+2025-04-08T08:49:49.881Z                   值: parameter0: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number) 是一个引用类型
+2025-04-08T08:49:49.882Z                 检查语句: add = parameter1: number
+2025-04-08T08:49:49.882Z                   检查值: parameter1: number类型是: number
+2025-04-08T08:49:49.883Z                   值: parameter1: number 是一个引用类型
+2025-04-08T08:49:49.884Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.884Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.885Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.886Z                 检查语句: return AnonymousMethod-createFunction-3
+2025-04-08T08:49:49.886Z                   检查值: AnonymousMethod-createFunction-3类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-createFunction-3(number)
+2025-04-08T08:49:49.887Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]createFunction(@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-0(number), number)检查完成
+2025-04-08T08:49:49.888Z           检查值: fun1类型是: @functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-2(number)
+2025-04-08T08:49:49.888Z           检查值: add类型是: number
+2025-04-08T08:49:49.889Z         检查语句: result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:49:49.890Z           检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)类型是: unknown
+2025-04-08T08:49:49.890Z             包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:49:49.891Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.892Z               检查语句:  result = staticinvoke <@_UnknownProjectName/_UnknownFileName: .fun2()>(10)
+2025-04-08T08:49:49.892Z               该方法:fun2来自未知类, 需要进行更换
+2025-04-08T08:49:49.893Z               找到方法:fun2同名的函数变量
+2025-04-08T08:49:49.893Z                 换成指针调用:result = ptrinvoke <@functionTest/functionPass.ts: FunctionFactory.AnonymousMethod-1(number)>(10)
+2025-04-08T08:49:49.894Z           调用方法为: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:49:49.894Z           该方法需要检查: 
+2025-04-08T08:49:49.895Z             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .fun2()
+2025-04-08T08:49:49.896Z           检查值: 10类型是: number
+2025-04-08T08:49:49.896Z         检查语句: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:49:49.897Z           检查值: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)类型是: unknown
+2025-04-08T08:49:49.897Z             包含调用表达式: staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:49:49.898Z             该表达式还是一个静态调用进行静态调用检查
+2025-04-08T08:49:49.899Z               检查语句:  staticinvoke <@functionTest/functionPass.ts: FunctionFactory.[static]sink(number)>(result)
+2025-04-08T08:49:49.900Z             !!!!!警告  没有找到方法:sink同名的函数变量
+2025-04-08T08:49:49.901Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:49:49.901Z           该方法需要检查: 
+2025-04-08T08:49:49.902Z             在项目中找到方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:49:49.903Z             跳转检查方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)
+2025-04-08T08:49:49.903Z               方法模式: 开始检查方法: sink
+2025-04-08T08:49:49.904Z                 开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.904Z                 检查方法:  sink  是否含有 if组件
+2025-04-08T08:49:49.905Z                 检查方法:  sink是否有使用到却没有声明的变量
+2025-04-08T08:49:49.906Z                 检查方法: sink是否有函数类型变量
+2025-04-08T08:49:49.907Z                 开始检查调用表达式
+2025-04-08T08:49:49.907Z                 检查语句: input = parameter0: number
+2025-04-08T08:49:49.908Z                   检查值: parameter0: number类型是: number
+2025-04-08T08:49:49.908Z                   值: parameter0: number 是一个引用类型
+2025-04-08T08:49:49.909Z                 检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.909Z                   检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.910Z                   值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.910Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:49:49.911Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)类型是: unknown
+2025-04-08T08:49:49.912Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)
+2025-04-08T08:49:49.912Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:49:49.913Z                   该方法需要检查: 
+2025-04-08T08:49:49.914Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-04-08T08:49:49.914Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>(input)是一个实例调用
+2025-04-08T08:49:49.915Z                   base: console 类型是: unknown
+2025-04-08T08:49:49.916Z                   检查值: console类型是: unknown
+2025-04-08T08:49:49.917Z                   检查值: input类型是: number
+2025-04-08T08:49:49.917Z                 检查语句: return
+2025-04-08T08:49:49.918Z             跳转方法: @functionTest/functionPass.ts: FunctionFactory.[static]sink(number)检查完成
+2025-04-08T08:49:49.919Z           检查值: result类型是: number
+2025-04-08T08:49:49.920Z         检查语句: return
+2025-04-08T08:49:49.920Z       方法模式: 开始检查方法: AnonymousMethod-0
+2025-04-08T08:49:49.921Z         方法是匿名的跳过
+2025-04-08T08:49:49.921Z       方法模式: 开始检查方法: AnonymousMethod-1
+2025-04-08T08:49:49.922Z         方法是匿名的跳过
+2025-04-08T08:49:49.922Z       方法模式: 开始检查方法: AnonymousMethod-2
+2025-04-08T08:49:49.923Z         方法是匿名的跳过
+2025-04-08T08:49:49.924Z       方法AnonymousMethod-createFunction-3已经被检查过
+2025-04-08T08:49:49.924Z       方法AnonymousMethod-createFunction1-4已经被检查过
+2025-04-08T08:49:49.925Z       方法模式: 开始检查方法: constructor
+2025-04-08T08:49:49.925Z         开始检查方法是否含有三元表达式
+2025-04-08T08:49:49.926Z         检查方法:  constructor  是否含有 if组件
+2025-04-08T08:49:49.927Z         检查方法:  constructor是否有使用到却没有声明的变量
+2025-04-08T08:49:49.927Z         检查方法: constructor是否有函数类型变量
+2025-04-08T08:49:49.928Z         开始检查调用表达式
+2025-04-08T08:49:49.928Z         检查语句: this = this: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.929Z           检查值: this: @functionTest/functionPass.ts: FunctionFactory类型是: @functionTest/functionPass.ts: FunctionFactory
+2025-04-08T08:49:49.930Z           值: this: @functionTest/functionPass.ts: FunctionFactory 是一个引用类型
+2025-04-08T08:49:49.931Z         检查语句: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:49:49.932Z           检查值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()类型是: unknown
+2025-04-08T08:49:49.932Z             包含调用表达式: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()
+2025-04-08T08:49:49.933Z           调用方法为: @functionTest/functionPass.ts: FunctionFactory.@instance_init()
+2025-04-08T08:49:49.933Z           该方法已经被检查: 
+2025-04-08T08:49:49.934Z           值: instanceinvoke this.<@functionTest/functionPass.ts: FunctionFactory.@instance_init()>()是一个实例调用
+2025-04-08T08:49:49.935Z           base: this 类型是: unknown
+2025-04-08T08:49:49.935Z           检查值: this类型是: unknown
+2025-04-08T08:49:49.936Z         检查语句: return
+2025-04-08T08:49:49.937Z       方法sink已经被检查过
+2025-04-08T08:49:49.937Z       方法createInt已经被检查过
+2025-04-08T08:49:49.938Z       方法createFunction已经被检查过
+2025-04-08T08:49:49.938Z       方法createFunction1已经被检查过
+2025-04-08T08:49:49.939Z     开始检查FunctionFactory的实例初始函数@instance_init
+2025-04-08T08:49:49.939Z       该类初始方法没有this变量
+2025-04-08T08:49:49.940Z       添加local变量
+2025-04-08T08:49:49.941Z       FunctionFactory没有父类我们构造一个对java.lang.Object的调用
+2025-04-08T08:49:49.941Z   开始检查文件funcInterfaceFile
+2025-04-08T08:49:49.942Z   this file is interface file 
+2025-04-08T08:49:49.942Z Finish the type check

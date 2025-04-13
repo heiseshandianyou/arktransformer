@@ -1,0 +1,535 @@
+2025-03-26T16:26:31.425Z number of classes: 20
+2025-03-26T16:26:31.431Z 开始对项目进行类型检查
+2025-03-26T16:26:31.431Z ------------------------------
+2025-03-26T16:26:31.431Z   开始检查文件super.ts
+2025-03-26T16:26:31.432Z   开始检查类_DEFAULT_ARK_CLASS
+2025-03-26T16:26:31.432Z       方法模式: 开始检查方法: _DEFAULT_ARK_METHOD
+2025-03-26T16:26:31.433Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.433Z         检查方法:  _DEFAULT_ARK_METHOD  是否含有 if组件
+2025-03-26T16:26:31.434Z         检查方法:  _DEFAULT_ARK_METHOD是否有使用到却没有声明的变量
+2025-03-26T16:26:31.434Z         检查方法: _DEFAULT_ARK_METHOD是否有函数类型变量
+2025-03-26T16:26:31.435Z         开始检查调用表达式
+2025-03-26T16:26:31.435Z         检查语句: this = this: @superClass/super.ts: _DEFAULT_ARK_CLASS
+2025-03-26T16:26:31.436Z           检查值: this: @superClass/super.ts: _DEFAULT_ARK_CLASS类型是: @superClass/super.ts: _DEFAULT_ARK_CLASS
+2025-03-26T16:26:31.436Z           值: this: @superClass/super.ts: _DEFAULT_ARK_CLASS 是一个引用类型
+2025-03-26T16:26:31.437Z         检查语句: $temp0 = new @superClass/super.ts: Child1
+2025-03-26T16:26:31.437Z           检查值: new @superClass/super.ts: Child1类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.438Z         检查语句: instanceinvoke $temp0.<@superClass/super.ts: Child1.constructor()>()
+2025-03-26T16:26:31.439Z           检查值: instanceinvoke $temp0.<@superClass/super.ts: Child1.constructor()>()类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.440Z             包含调用表达式: instanceinvoke $temp0.<@superClass/super.ts: Child1.constructor()>()
+2025-03-26T16:26:31.440Z           调用方法为: @superClass/super.ts: Child1.constructor()
+2025-03-26T16:26:31.441Z           该方法需要检查: 
+2025-03-26T16:26:31.441Z             在项目中找到方法: @superClass/super.ts: Child1.constructor()
+2025-03-26T16:26:31.442Z             跳转检查方法: @superClass/super.ts: Child1.constructor()
+2025-03-26T16:26:31.442Z               方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.442Z                 开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.443Z                 检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.444Z                 检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.445Z                 添加变量super
+2025-03-26T16:26:31.446Z                 检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.447Z                 开始检查调用表达式
+2025-03-26T16:26:31.448Z                 检查语句: this = this: @superClass/super.ts: Child1
+2025-03-26T16:26:31.448Z                   检查值: this: @superClass/super.ts: Child1类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.448Z                   值: this: @superClass/super.ts: Child1 是一个引用类型
+2025-03-26T16:26:31.449Z                 检查语句: instanceinvoke this.<@superClass/super.ts: Child1.@instance_init()>()
+2025-03-26T16:26:31.450Z                   检查值: instanceinvoke this.<@superClass/super.ts: Child1.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.451Z                     包含调用表达式: instanceinvoke this.<@superClass/super.ts: Child1.@instance_init()>()
+2025-03-26T16:26:31.451Z                   调用方法为: @superClass/super.ts: Child1.@instance_init()
+2025-03-26T16:26:31.452Z                   该方法需要检查: 
+2025-03-26T16:26:31.452Z                     在项目中找到方法: @superClass/super.ts: Child1.@instance_init()
+2025-03-26T16:26:31.453Z                     跳转检查方法: @superClass/super.ts: Child1.@instance_init()
+2025-03-26T16:26:31.453Z                       方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.454Z                         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.454Z                         检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.455Z                         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.455Z                         检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.456Z                         开始检查调用表达式
+2025-03-26T16:26:31.456Z                         检查语句: this = this: @superClass/super.ts: Child1
+2025-03-26T16:26:31.456Z                           检查值: this: @superClass/super.ts: Child1类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.457Z                           值: this: @superClass/super.ts: Child1 是一个引用类型
+2025-03-26T16:26:31.457Z                         检查语句: return
+2025-03-26T16:26:31.458Z                     跳转方法: @superClass/super.ts: Child1.@instance_init()检查完成
+2025-03-26T16:26:31.458Z                   值: instanceinvoke this.<@superClass/super.ts: Child1.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.459Z                   base: this 类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.459Z                   检查值: this类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.460Z                 检查语句: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>()
+2025-03-26T16:26:31.460Z                   检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>()类型是: unknown
+2025-03-26T16:26:31.461Z                     包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>()
+2025-03-26T16:26:31.461Z                     该表达式还是一个静态调用进行静态调用检查
+2025-03-26T16:26:31.461Z                       检查语句:  staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>()
+2025-03-26T16:26:31.462Z                       该方法:super来自未知类, 需要进行更换
+2025-03-26T16:26:31.462Z                       !!!!!警告  没有找到方法:super同名的函数变量
+2025-03-26T16:26:31.462Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.463Z                   该方法需要检查: 
+2025-03-26T16:26:31.463Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.464Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child1 的构造方法')
+2025-03-26T16:26:31.464Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child1 的构造方法')类型是: unknown
+2025-03-26T16:26:31.465Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child1 的构造方法')
+2025-03-26T16:26:31.466Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.466Z                   该方法需要检查: 
+2025-03-26T16:26:31.467Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.467Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child1 的构造方法')是一个实例调用
+2025-03-26T16:26:31.467Z                   base: console 类型是: unknown
+2025-03-26T16:26:31.468Z                   检查值: console类型是: unknown
+2025-03-26T16:26:31.468Z                   检查值: 'Child1 的构造方法'类型是: string
+2025-03-26T16:26:31.469Z                 检查语句: $temp0 = new @superClass/super.ts: Parent1
+2025-03-26T16:26:31.469Z                   检查值: new @superClass/super.ts: Parent1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.470Z                 检查语句: instanceinvoke $temp0.<@superClass/super.ts: Parent1.constructor()>()
+2025-03-26T16:26:31.470Z                   检查值: instanceinvoke $temp0.<@superClass/super.ts: Parent1.constructor()>()类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.470Z                     包含调用表达式: instanceinvoke $temp0.<@superClass/super.ts: Parent1.constructor()>()
+2025-03-26T16:26:31.471Z                   调用方法为: @superClass/super.ts: Parent1.constructor()
+2025-03-26T16:26:31.471Z                   该方法需要检查: 
+2025-03-26T16:26:31.472Z                     在项目中找到方法: @superClass/super.ts: Parent1.constructor()
+2025-03-26T16:26:31.472Z                     跳转检查方法: @superClass/super.ts: Parent1.constructor()
+2025-03-26T16:26:31.472Z                       方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.473Z                         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.473Z                         检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.474Z                         检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.474Z                         检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.475Z                         开始检查调用表达式
+2025-03-26T16:26:31.475Z                         检查语句: this = this: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.475Z                           检查值: this: @superClass/super.ts: Parent1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.476Z                           值: this: @superClass/super.ts: Parent1 是一个引用类型
+2025-03-26T16:26:31.476Z                         检查语句: instanceinvoke this.<@superClass/super.ts: Parent1.@instance_init()>()
+2025-03-26T16:26:31.476Z                           检查值: instanceinvoke this.<@superClass/super.ts: Parent1.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.477Z                             包含调用表达式: instanceinvoke this.<@superClass/super.ts: Parent1.@instance_init()>()
+2025-03-26T16:26:31.477Z                           调用方法为: @superClass/super.ts: Parent1.@instance_init()
+2025-03-26T16:26:31.478Z                           该方法需要检查: 
+2025-03-26T16:26:31.478Z                             在项目中找到方法: @superClass/super.ts: Parent1.@instance_init()
+2025-03-26T16:26:31.479Z                             跳转检查方法: @superClass/super.ts: Parent1.@instance_init()
+2025-03-26T16:26:31.479Z                               方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.479Z                                 开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.480Z                                 检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.480Z                                 检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.480Z                                 添加变量this
+2025-03-26T16:26:31.481Z                                 检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.481Z                                 开始检查调用表达式
+2025-03-26T16:26:31.481Z                                 检查语句: this = this: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.482Z                                   检查值: this: @superClass/super.ts: Parent1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.482Z                                   值: this: @superClass/super.ts: Parent1 是一个引用类型
+2025-03-26T16:26:31.482Z                                 检查语句: this.<@superClass/super.ts: Parent1.number> = 0
+2025-03-26T16:26:31.483Z                                   检查值: this类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.483Z                                   检查值: 0类型是: number
+2025-03-26T16:26:31.484Z                                 检查语句: return
+2025-03-26T16:26:31.484Z                             跳转方法: @superClass/super.ts: Parent1.@instance_init()检查完成
+2025-03-26T16:26:31.484Z                           值: instanceinvoke this.<@superClass/super.ts: Parent1.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.485Z                           base: this 类型是: unknown
+2025-03-26T16:26:31.485Z                           检查值: this类型是: unknown
+2025-03-26T16:26:31.485Z                         检查语句: return
+2025-03-26T16:26:31.486Z                     跳转方法: @superClass/super.ts: Parent1.constructor()检查完成
+2025-03-26T16:26:31.486Z                   值: instanceinvoke $temp0.<@superClass/super.ts: Parent1.constructor()>()是一个实例调用
+2025-03-26T16:26:31.487Z                   base: $temp0 类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.487Z                   检查值: $temp0类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.488Z                 检查语句: c1 = $temp0
+2025-03-26T16:26:31.488Z                   检查值: $temp0类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.489Z                 检查语句: if c1 != undefined
+2025-03-26T16:26:31.489Z                   检查值: c1 != undefined类型是: boolean
+2025-03-26T16:26:31.489Z                   值: c1 != undefined是一个二元表达式
+2025-03-26T16:26:31.490Z                   值: c1 != undefined是一个二元表达式 类型是boolean
+2025-03-26T16:26:31.490Z                   检查值: c1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.490Z                   检查值: undefined类型是: undefined
+2025-03-26T16:26:31.491Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('sds')
+2025-03-26T16:26:31.491Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('sds')类型是: unknown
+2025-03-26T16:26:31.491Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('sds')
+2025-03-26T16:26:31.492Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.492Z                   该方法需要检查: 
+2025-03-26T16:26:31.492Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.493Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('sds')是一个实例调用
+2025-03-26T16:26:31.493Z                   base: console 类型是: unknown
+2025-03-26T16:26:31.493Z                   检查值: console类型是: unknown
+2025-03-26T16:26:31.494Z                   检查值: 'sds'类型是: string
+2025-03-26T16:26:31.494Z                 检查语句: instanceinvoke super.<@superClass/super.ts: Parent1.say()>()
+2025-03-26T16:26:31.494Z                   检查值: instanceinvoke super.<@superClass/super.ts: Parent1.say()>()类型是: unknown
+2025-03-26T16:26:31.495Z                     包含调用表达式: instanceinvoke super.<@superClass/super.ts: Parent1.say()>()
+2025-03-26T16:26:31.495Z                   调用方法为: @superClass/super.ts: Parent1.say()
+2025-03-26T16:26:31.496Z                   该方法需要检查: 
+2025-03-26T16:26:31.496Z                     在项目中找到方法: @superClass/super.ts: Parent1.say()
+2025-03-26T16:26:31.496Z                     跳转检查方法: @superClass/super.ts: Parent1.say()
+2025-03-26T16:26:31.497Z                       方法模式: 开始检查方法: say
+2025-03-26T16:26:31.497Z                         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.498Z                         检查方法:  say  是否含有 if组件
+2025-03-26T16:26:31.498Z                         检查方法:  say是否有使用到却没有声明的变量
+2025-03-26T16:26:31.498Z                         检查方法: say是否有函数类型变量
+2025-03-26T16:26:31.499Z                         开始检查调用表达式
+2025-03-26T16:26:31.499Z                         检查语句: this = this: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.500Z                           检查值: this: @superClass/super.ts: Parent1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.500Z                           值: this: @superClass/super.ts: Parent1 是一个引用类型
+2025-03-26T16:26:31.500Z                         检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('港中大死全家')
+2025-03-26T16:26:31.501Z                           检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('港中大死全家')类型是: unknown
+2025-03-26T16:26:31.501Z                             包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('港中大死全家')
+2025-03-26T16:26:31.501Z                           调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.502Z                           该方法需要检查: 
+2025-03-26T16:26:31.502Z                             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.503Z                           值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('港中大死全家')是一个实例调用
+2025-03-26T16:26:31.503Z                           base: console 类型是: unknown
+2025-03-26T16:26:31.503Z                           检查值: console类型是: unknown
+2025-03-26T16:26:31.504Z                           检查值: '港中大死全家'类型是: string
+2025-03-26T16:26:31.504Z                         检查语句: return
+2025-03-26T16:26:31.504Z                     跳转方法: @superClass/super.ts: Parent1.say()检查完成
+2025-03-26T16:26:31.505Z                   值: instanceinvoke super.<@superClass/super.ts: Parent1.say()>()是一个实例调用
+2025-03-26T16:26:31.505Z                   base: super 类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.505Z                   这是一个对于父类方法的调用 我们会把base换成指向自己的this
+2025-03-26T16:26:31.506Z                     更改后的stmt: instanceinvoke this.<@superClass/super.ts: Parent1.say()>() 同时我们删除了super 变量
+2025-03-26T16:26:31.506Z                   检查值: super类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.507Z                 检查语句: return
+2025-03-26T16:26:31.507Z             跳转方法: @superClass/super.ts: Child1.constructor()检查完成
+2025-03-26T16:26:31.507Z           值: instanceinvoke $temp0.<@superClass/super.ts: Child1.constructor()>()是一个实例调用
+2025-03-26T16:26:31.508Z           base: $temp0 类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.508Z           检查值: $temp0类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.508Z         检查语句: c1 = $temp0
+2025-03-26T16:26:31.509Z           检查值: $temp0类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.509Z         检查语句: $temp1 = new @superClass/super.ts: Child2
+2025-03-26T16:26:31.509Z           检查值: new @superClass/super.ts: Child2类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.510Z         检查语句: instanceinvoke $temp1.<@superClass/super.ts: Child2.constructor(string)>('Hello')
+2025-03-26T16:26:31.510Z           检查值: instanceinvoke $temp1.<@superClass/super.ts: Child2.constructor(string)>('Hello')类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.511Z             包含调用表达式: instanceinvoke $temp1.<@superClass/super.ts: Child2.constructor(string)>('Hello')
+2025-03-26T16:26:31.511Z           调用方法为: @superClass/super.ts: Child2.constructor(string)
+2025-03-26T16:26:31.511Z           该方法需要检查: 
+2025-03-26T16:26:31.512Z             在项目中找到方法: @superClass/super.ts: Child2.constructor(string)
+2025-03-26T16:26:31.512Z             跳转检查方法: @superClass/super.ts: Child2.constructor(string)
+2025-03-26T16:26:31.512Z               方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.513Z                 开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.513Z                 检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.513Z                 检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.514Z                 检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.514Z                 开始检查调用表达式
+2025-03-26T16:26:31.514Z                 检查语句: instanceinvoke this.<@superClass/super.ts: Child2.@instance_init()>()
+2025-03-26T16:26:31.515Z                   检查值: instanceinvoke this.<@superClass/super.ts: Child2.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.515Z                     包含调用表达式: instanceinvoke this.<@superClass/super.ts: Child2.@instance_init()>()
+2025-03-26T16:26:31.515Z                   调用方法为: @superClass/super.ts: Child2.@instance_init()
+2025-03-26T16:26:31.516Z                   该方法需要检查: 
+2025-03-26T16:26:31.516Z                     在项目中找到方法: @superClass/super.ts: Child2.@instance_init()
+2025-03-26T16:26:31.516Z                     跳转检查方法: @superClass/super.ts: Child2.@instance_init()
+2025-03-26T16:26:31.517Z                       方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.518Z                         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.518Z                         检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.518Z                         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.519Z                         检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.519Z                         开始检查调用表达式
+2025-03-26T16:26:31.520Z                         检查语句: this = this: @superClass/super.ts: Child2
+2025-03-26T16:26:31.520Z                           检查值: this: @superClass/super.ts: Child2类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.520Z                           值: this: @superClass/super.ts: Child2 是一个引用类型
+2025-03-26T16:26:31.521Z                         检查语句: return
+2025-03-26T16:26:31.521Z                     跳转方法: @superClass/super.ts: Child2.@instance_init()检查完成
+2025-03-26T16:26:31.521Z                   值: instanceinvoke this.<@superClass/super.ts: Child2.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.522Z                   base: this 类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.522Z                   检查值: this类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.523Z                 检查语句: message = parameter0: string
+2025-03-26T16:26:31.523Z                   检查值: parameter0: string类型是: string
+2025-03-26T16:26:31.523Z                   值: parameter0: string 是一个引用类型
+2025-03-26T16:26:31.524Z                 检查语句: this = this: @superClass/super.ts: Child2
+2025-03-26T16:26:31.524Z                   检查值: this: @superClass/super.ts: Child2类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.524Z                   值: this: @superClass/super.ts: Child2 是一个引用类型
+2025-03-26T16:26:31.525Z                 检查语句: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(message)
+2025-03-26T16:26:31.525Z                   检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(message)类型是: unknown
+2025-03-26T16:26:31.525Z                     包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(message)
+2025-03-26T16:26:31.526Z                     该表达式还是一个静态调用进行静态调用检查
+2025-03-26T16:26:31.526Z                       检查语句:  staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(message)
+2025-03-26T16:26:31.526Z                       该方法:super来自未知类, 需要进行更换
+2025-03-26T16:26:31.527Z                     !!!!!警告  没有找到方法:super同名的函数变量
+2025-03-26T16:26:31.527Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.528Z                   该方法需要检查: 
+2025-03-26T16:26:31.528Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.528Z                   检查值: message类型是: string
+2025-03-26T16:26:31.529Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child2 的构造方法')
+2025-03-26T16:26:31.529Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child2 的构造方法')类型是: unknown
+2025-03-26T16:26:31.530Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child2 的构造方法')
+2025-03-26T16:26:31.530Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.531Z                   该方法需要检查: 
+2025-03-26T16:26:31.531Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.532Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child2 的构造方法')是一个实例调用
+2025-03-26T16:26:31.532Z                   base: console 类型是: unknown
+2025-03-26T16:26:31.533Z                   检查值: console类型是: unknown
+2025-03-26T16:26:31.533Z                   检查值: 'Child2 的构造方法'类型是: string
+2025-03-26T16:26:31.533Z                 检查语句: return
+2025-03-26T16:26:31.534Z             跳转方法: @superClass/super.ts: Child2.constructor(string)检查完成
+2025-03-26T16:26:31.534Z           值: instanceinvoke $temp1.<@superClass/super.ts: Child2.constructor(string)>('Hello')是一个实例调用
+2025-03-26T16:26:31.535Z           base: $temp1 类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.535Z           检查值: $temp1类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.535Z           检查值: 'Hello'类型是: string
+2025-03-26T16:26:31.536Z         检查语句: c2 = $temp1
+2025-03-26T16:26:31.536Z           检查值: $temp1类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.536Z         检查语句: $temp2 = new @superClass/super.ts: Child3
+2025-03-26T16:26:31.537Z           检查值: new @superClass/super.ts: Child3类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.537Z         检查语句: instanceinvoke $temp2.<@superClass/super.ts: Child3.constructor()>()
+2025-03-26T16:26:31.538Z           检查值: instanceinvoke $temp2.<@superClass/super.ts: Child3.constructor()>()类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.538Z             包含调用表达式: instanceinvoke $temp2.<@superClass/super.ts: Child3.constructor()>()
+2025-03-26T16:26:31.538Z           调用方法为: @superClass/super.ts: Child3.constructor()
+2025-03-26T16:26:31.539Z           该方法需要检查: 
+2025-03-26T16:26:31.539Z             在项目中找到方法: @superClass/super.ts: Child3.constructor()
+2025-03-26T16:26:31.539Z             跳转检查方法: @superClass/super.ts: Child3.constructor()
+2025-03-26T16:26:31.540Z               方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.541Z                 开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.541Z                 检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.541Z                 检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.542Z                 检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.542Z                 开始检查调用表达式
+2025-03-26T16:26:31.543Z                 检查语句: this = this: @superClass/super.ts: Child3
+2025-03-26T16:26:31.543Z                   检查值: this: @superClass/super.ts: Child3类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.543Z                   值: this: @superClass/super.ts: Child3 是一个引用类型
+2025-03-26T16:26:31.544Z                 检查语句: instanceinvoke this.<@superClass/super.ts: Child3.@instance_init()>()
+2025-03-26T16:26:31.545Z                   检查值: instanceinvoke this.<@superClass/super.ts: Child3.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.545Z                     包含调用表达式: instanceinvoke this.<@superClass/super.ts: Child3.@instance_init()>()
+2025-03-26T16:26:31.545Z                   调用方法为: @superClass/super.ts: Child3.@instance_init()
+2025-03-26T16:26:31.546Z                   该方法需要检查: 
+2025-03-26T16:26:31.546Z                     在项目中找到方法: @superClass/super.ts: Child3.@instance_init()
+2025-03-26T16:26:31.546Z                     跳转检查方法: @superClass/super.ts: Child3.@instance_init()
+2025-03-26T16:26:31.547Z                       方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.547Z                         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.548Z                         检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.548Z                         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.548Z                         检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.549Z                         开始检查调用表达式
+2025-03-26T16:26:31.550Z                         检查语句: this = this: @superClass/super.ts: Child3
+2025-03-26T16:26:31.550Z                           检查值: this: @superClass/super.ts: Child3类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.550Z                           值: this: @superClass/super.ts: Child3 是一个引用类型
+2025-03-26T16:26:31.551Z                         检查语句: return
+2025-03-26T16:26:31.551Z                     跳转方法: @superClass/super.ts: Child3.@instance_init()检查完成
+2025-03-26T16:26:31.551Z                   值: instanceinvoke this.<@superClass/super.ts: Child3.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.552Z                   base: this 类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.552Z                   检查值: this类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.553Z                 检查语句: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(42)
+2025-03-26T16:26:31.553Z                   检查值: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(42)类型是: unknown
+2025-03-26T16:26:31.554Z                     包含调用表达式: staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(42)
+2025-03-26T16:26:31.554Z                     该表达式还是一个静态调用进行静态调用检查
+2025-03-26T16:26:31.554Z                       检查语句:  staticinvoke <@_UnknownProjectName/_UnknownFileName: .super()>(42)
+2025-03-26T16:26:31.555Z                       该方法:super来自未知类, 需要进行更换
+2025-03-26T16:26:31.555Z                     !!!!!警告  没有找到方法:super同名的函数变量
+2025-03-26T16:26:31.555Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.556Z                   该方法需要检查: 
+2025-03-26T16:26:31.556Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .super()
+2025-03-26T16:26:31.557Z                   检查值: 42类型是: number
+2025-03-26T16:26:31.558Z                 检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child3 的构造方法')
+2025-03-26T16:26:31.558Z                   检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child3 的构造方法')类型是: unknown
+2025-03-26T16:26:31.559Z                     包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child3 的构造方法')
+2025-03-26T16:26:31.559Z                   调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.559Z                   该方法需要检查: 
+2025-03-26T16:26:31.560Z                     没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.560Z                   值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>('Child3 的构造方法')是一个实例调用
+2025-03-26T16:26:31.560Z                   base: console 类型是: unknown
+2025-03-26T16:26:31.561Z                   检查值: console类型是: unknown
+2025-03-26T16:26:31.561Z                   检查值: 'Child3 的构造方法'类型是: string
+2025-03-26T16:26:31.561Z                 检查语句: return
+2025-03-26T16:26:31.562Z             跳转方法: @superClass/super.ts: Child3.constructor()检查完成
+2025-03-26T16:26:31.562Z           值: instanceinvoke $temp2.<@superClass/super.ts: Child3.constructor()>()是一个实例调用
+2025-03-26T16:26:31.563Z           base: $temp2 类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.563Z           检查值: $temp2类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.563Z         检查语句: c3 = $temp2
+2025-03-26T16:26:31.564Z           检查值: $temp2类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.564Z         检查语句: return
+2025-03-26T16:26:31.565Z     开始检查_DEFAULT_ARK_CLASS的实例初始函数@instance_init
+2025-03-26T16:26:31.565Z     _DEFAULT_ARK_CLASS没有实例初始函数
+2025-03-26T16:26:31.565Z     _DEFAULT_ARK_CLASS没有静态初始函数
+2025-03-26T16:26:31.566Z     This class is a default class we need check if it has a init method
+2025-03-26T16:26:31.566Z       This class has no constructor, we build it now
+2025-03-26T16:26:31.566Z   开始检查类Parent1
+2025-03-26T16:26:31.567Z       方法@instance_init已经被检查过
+2025-03-26T16:26:31.567Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.568Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.568Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.568Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.569Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.569Z         开始检查调用表达式
+2025-03-26T16:26:31.569Z         检查语句: this = this: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.570Z           检查值: this: @superClass/super.ts: Parent1类型是: @superClass/super.ts: Parent1
+2025-03-26T16:26:31.571Z           值: this: @superClass/super.ts: Parent1 是一个引用类型
+2025-03-26T16:26:31.571Z         检查语句: return
+2025-03-26T16:26:31.571Z       方法say已经被检查过
+2025-03-26T16:26:31.572Z       方法constructor已经被检查过
+2025-03-26T16:26:31.573Z     开始检查Parent1的实例初始函数@instance_init
+2025-03-26T16:26:31.573Z       Parent1没有父类我们构造一个对java.lang.Object的调用
+2025-03-26T16:26:31.573Z   开始检查类Child1
+2025-03-26T16:26:31.574Z       方法@instance_init已经被检查过
+2025-03-26T16:26:31.574Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.574Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.575Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.575Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.575Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.576Z         开始检查调用表达式
+2025-03-26T16:26:31.577Z         检查语句: this = this: @superClass/super.ts: Child1
+2025-03-26T16:26:31.577Z           检查值: this: @superClass/super.ts: Child1类型是: @superClass/super.ts: Child1
+2025-03-26T16:26:31.578Z           值: this: @superClass/super.ts: Child1 是一个引用类型
+2025-03-26T16:26:31.578Z         检查语句: return
+2025-03-26T16:26:31.578Z       方法constructor已经被检查过
+2025-03-26T16:26:31.579Z     开始检查Child1的实例初始函数@instance_init
+2025-03-26T16:26:31.579Z       该类初始方法没有this变量
+2025-03-26T16:26:31.580Z       添加local变量
+2025-03-26T16:26:31.580Z   开始检查类Parent2
+2025-03-26T16:26:31.581Z       方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.581Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.581Z         检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.582Z         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.582Z         检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.582Z         开始检查调用表达式
+2025-03-26T16:26:31.583Z         检查语句: this = this: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.583Z           检查值: this: @superClass/super.ts: Parent2类型是: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.584Z           值: this: @superClass/super.ts: Parent2 是一个引用类型
+2025-03-26T16:26:31.584Z         检查语句: return
+2025-03-26T16:26:31.584Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.585Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.585Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.585Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.586Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.586Z         开始检查调用表达式
+2025-03-26T16:26:31.586Z         检查语句: this = this: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.587Z           检查值: this: @superClass/super.ts: Parent2类型是: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.587Z           值: this: @superClass/super.ts: Parent2 是一个引用类型
+2025-03-26T16:26:31.588Z         检查语句: return
+2025-03-26T16:26:31.588Z       方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.589Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.589Z         检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.589Z         检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.590Z         检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.590Z         开始检查调用表达式
+2025-03-26T16:26:31.590Z         检查语句: instanceinvoke this.<@superClass/super.ts: Parent2.@instance_init()>()
+2025-03-26T16:26:31.591Z           检查值: instanceinvoke this.<@superClass/super.ts: Parent2.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.591Z             包含调用表达式: instanceinvoke this.<@superClass/super.ts: Parent2.@instance_init()>()
+2025-03-26T16:26:31.591Z           调用方法为: @superClass/super.ts: Parent2.@instance_init()
+2025-03-26T16:26:31.592Z           该方法已经被检查: 
+2025-03-26T16:26:31.592Z           值: instanceinvoke this.<@superClass/super.ts: Parent2.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.593Z           base: this 类型是: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.593Z           检查值: this类型是: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.593Z         检查语句: message = parameter0: string
+2025-03-26T16:26:31.594Z           检查值: parameter0: string类型是: string
+2025-03-26T16:26:31.594Z           值: parameter0: string 是一个引用类型
+2025-03-26T16:26:31.594Z         检查语句: this = this: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.595Z           检查值: this: @superClass/super.ts: Parent2类型是: @superClass/super.ts: Parent2
+2025-03-26T16:26:31.596Z           值: this: @superClass/super.ts: Parent2 是一个引用类型
+2025-03-26T16:26:31.596Z         检查语句: $temp0 = 'Parent2 的构造方法,message = ' + message
+2025-03-26T16:26:31.596Z           检查值: 'Parent2 的构造方法,message = ' + message类型是: string
+2025-03-26T16:26:31.597Z           值: 'Parent2 的构造方法,message = ' + message是一个二元表达式
+2025-03-26T16:26:31.597Z           值: 'Parent2 的构造方法,message = ' + message是一个字符串加法
+2025-03-26T16:26:31.598Z             额外添加字符变量
+2025-03-26T16:26:31.598Z             新构造的赋值语句是: $temp0 = instanceinvoke $temp0.<@java/lang: String.concat(string)>(message)
+2025-03-26T16:26:31.599Z             构造之后的连接语句是: $temp0 = instanceinvoke $temp0.<@java/lang: String.concat(string)>(message)
+2025-03-26T16:26:31.599Z           检查值: 'Parent2 的构造方法,message = '类型是: string
+2025-03-26T16:26:31.599Z           检查值: message类型是: string
+2025-03-26T16:26:31.600Z         检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp0)
+2025-03-26T16:26:31.600Z           检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp0)类型是: unknown
+2025-03-26T16:26:31.601Z             包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp0)
+2025-03-26T16:26:31.601Z           调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.602Z           该方法需要检查: 
+2025-03-26T16:26:31.602Z             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.602Z           值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp0)是一个实例调用
+2025-03-26T16:26:31.603Z           base: console 类型是: unknown
+2025-03-26T16:26:31.603Z           检查值: console类型是: unknown
+2025-03-26T16:26:31.604Z           检查值: $temp0类型是: string
+2025-03-26T16:26:31.604Z         检查语句: return
+2025-03-26T16:26:31.604Z     开始检查Parent2的实例初始函数@instance_init
+2025-03-26T16:26:31.605Z       该类初始方法没有this变量
+2025-03-26T16:26:31.605Z       添加local变量
+2025-03-26T16:26:31.605Z       Parent2没有父类我们构造一个对java.lang.Object的调用
+2025-03-26T16:26:31.606Z   开始检查类Child2
+2025-03-26T16:26:31.606Z       方法@instance_init已经被检查过
+2025-03-26T16:26:31.606Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.607Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.607Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.608Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.608Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.609Z         开始检查调用表达式
+2025-03-26T16:26:31.609Z         检查语句: this = this: @superClass/super.ts: Child2
+2025-03-26T16:26:31.609Z           检查值: this: @superClass/super.ts: Child2类型是: @superClass/super.ts: Child2
+2025-03-26T16:26:31.610Z           值: this: @superClass/super.ts: Child2 是一个引用类型
+2025-03-26T16:26:31.611Z         检查语句: return
+2025-03-26T16:26:31.611Z       方法constructor已经被检查过
+2025-03-26T16:26:31.611Z     开始检查Child2的实例初始函数@instance_init
+2025-03-26T16:26:31.612Z       该类初始方法没有this变量
+2025-03-26T16:26:31.613Z       添加local变量
+2025-03-26T16:26:31.613Z   开始检查类Parent3
+2025-03-26T16:26:31.613Z       方法模式: 开始检查方法: @instance_init
+2025-03-26T16:26:31.614Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.614Z         检查方法:  @instance_init  是否含有 if组件
+2025-03-26T16:26:31.615Z         检查方法:  @instance_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.615Z         检查方法: @instance_init是否有函数类型变量
+2025-03-26T16:26:31.616Z         开始检查调用表达式
+2025-03-26T16:26:31.616Z         检查语句: this = this: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.616Z           检查值: this: @superClass/super.ts: Parent3类型是: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.617Z           值: this: @superClass/super.ts: Parent3 是一个引用类型
+2025-03-26T16:26:31.617Z         检查语句: return
+2025-03-26T16:26:31.617Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.618Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.618Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.618Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.619Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.620Z         开始检查调用表达式
+2025-03-26T16:26:31.621Z         检查语句: this = this: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.621Z           检查值: this: @superClass/super.ts: Parent3类型是: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.621Z           值: this: @superClass/super.ts: Parent3 是一个引用类型
+2025-03-26T16:26:31.622Z         检查语句: return
+2025-03-26T16:26:31.622Z       方法模式: 开始检查方法: constructor
+2025-03-26T16:26:31.622Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.623Z         检查方法:  constructor  是否含有 if组件
+2025-03-26T16:26:31.623Z         检查方法:  constructor是否有使用到却没有声明的变量
+2025-03-26T16:26:31.624Z         检查方法: constructor是否有函数类型变量
+2025-03-26T16:26:31.624Z         开始检查调用表达式
+2025-03-26T16:26:31.624Z         检查语句: instanceinvoke this.<@superClass/super.ts: Parent3.@instance_init()>()
+2025-03-26T16:26:31.625Z           检查值: instanceinvoke this.<@superClass/super.ts: Parent3.@instance_init()>()类型是: unknown
+2025-03-26T16:26:31.625Z             包含调用表达式: instanceinvoke this.<@superClass/super.ts: Parent3.@instance_init()>()
+2025-03-26T16:26:31.626Z           调用方法为: @superClass/super.ts: Parent3.@instance_init()
+2025-03-26T16:26:31.626Z           该方法已经被检查: 
+2025-03-26T16:26:31.626Z           值: instanceinvoke this.<@superClass/super.ts: Parent3.@instance_init()>()是一个实例调用
+2025-03-26T16:26:31.627Z           base: this 类型是: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.627Z           检查值: this类型是: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.628Z         检查语句: number = parameter0: number
+2025-03-26T16:26:31.628Z           检查值: parameter0: number类型是: number
+2025-03-26T16:26:31.628Z           值: parameter0: number 是一个引用类型
+2025-03-26T16:26:31.629Z         检查语句: this = this: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.629Z           检查值: this: @superClass/super.ts: Parent3类型是: @superClass/super.ts: Parent3
+2025-03-26T16:26:31.630Z           值: this: @superClass/super.ts: Parent3 是一个引用类型
+2025-03-26T16:26:31.630Z         检查语句: $temp0 = extra || 'none'
+2025-03-26T16:26:31.631Z           检查值: extra || 'none'类型是: boolean
+2025-03-26T16:26:31.631Z           值: extra || 'none'是一个二元表达式
+2025-03-26T16:26:31.631Z           值: extra || 'none'是一个二元表达式 类型是boolean
+2025-03-26T16:26:31.632Z           检查值: extra类型是: unknown
+2025-03-26T16:26:31.632Z           检查值: 'none'类型是: string
+2025-03-26T16:26:31.632Z         检查语句: $temp1 = 'Parent3 的构造方法,number = ' + number
+2025-03-26T16:26:31.633Z           检查值: 'Parent3 的构造方法,number = ' + number类型是: string
+2025-03-26T16:26:31.633Z           值: 'Parent3 的构造方法,number = ' + number是一个二元表达式
+2025-03-26T16:26:31.634Z           检查值: 'Parent3 的构造方法,number = '类型是: string
+2025-03-26T16:26:31.634Z           检查值: number类型是: number
+2025-03-26T16:26:31.635Z         检查语句: $temp2 = $temp1 + ', extra = '
+2025-03-26T16:26:31.635Z           检查值: $temp1 + ', extra = '类型是: string
+2025-03-26T16:26:31.635Z           值: $temp1 + ', extra = '是一个二元表达式
+2025-03-26T16:26:31.636Z           值: $temp1 + ', extra = '是一个字符串加法
+2025-03-26T16:26:31.636Z             构造之后的连接语句是: $temp2 = instanceinvoke $temp1.<@java/lang: String.concat(string)>(', extra = ')
+2025-03-26T16:26:31.637Z           检查值: $temp1类型是: string
+2025-03-26T16:26:31.637Z           检查值: ', extra = '类型是: string
+2025-03-26T16:26:31.637Z         检查语句: $temp3 = $temp2 + $temp0
+2025-03-26T16:26:31.638Z           检查值: $temp2 + $temp0类型是: string
+2025-03-26T16:26:31.638Z           值: $temp2 + $temp0是一个二元表达式
+2025-03-26T16:26:31.639Z           检查值: $temp2类型是: string
+2025-03-26T16:26:31.639Z           检查值: $temp0类型是: boolean
+2025-03-26T16:26:31.639Z         检查语句: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp3)
+2025-03-26T16:26:31.640Z           检查值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp3)类型是: unknown
+2025-03-26T16:26:31.640Z             包含调用表达式: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp3)
+2025-03-26T16:26:31.641Z           调用方法为: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.641Z           该方法需要检查: 
+2025-03-26T16:26:31.641Z             没有在项目中找到方法: @_UnknownProjectName/_UnknownFileName: .log()
+2025-03-26T16:26:31.642Z           值: instanceinvoke console.<@_UnknownProjectName/_UnknownFileName: .log()>($temp3)是一个实例调用
+2025-03-26T16:26:31.642Z           base: console 类型是: unknown
+2025-03-26T16:26:31.643Z           检查值: console类型是: unknown
+2025-03-26T16:26:31.643Z           检查值: $temp3类型是: string
+2025-03-26T16:26:31.643Z         检查语句: return
+2025-03-26T16:26:31.644Z     开始检查Parent3的实例初始函数@instance_init
+2025-03-26T16:26:31.644Z       该类初始方法没有this变量
+2025-03-26T16:26:31.645Z       添加local变量
+2025-03-26T16:26:31.645Z       Parent3没有父类我们构造一个对java.lang.Object的调用
+2025-03-26T16:26:31.646Z   开始检查类Child3
+2025-03-26T16:26:31.646Z       方法@instance_init已经被检查过
+2025-03-26T16:26:31.647Z       方法模式: 开始检查方法: @static_init
+2025-03-26T16:26:31.647Z         开始检查方法是否含有三元表达式
+2025-03-26T16:26:31.647Z         检查方法:  @static_init  是否含有 if组件
+2025-03-26T16:26:31.648Z         检查方法:  @static_init是否有使用到却没有声明的变量
+2025-03-26T16:26:31.648Z         检查方法: @static_init是否有函数类型变量
+2025-03-26T16:26:31.648Z         开始检查调用表达式
+2025-03-26T16:26:31.649Z         检查语句: this = this: @superClass/super.ts: Child3
+2025-03-26T16:26:31.649Z           检查值: this: @superClass/super.ts: Child3类型是: @superClass/super.ts: Child3
+2025-03-26T16:26:31.649Z           值: this: @superClass/super.ts: Child3 是一个引用类型
+2025-03-26T16:26:31.650Z         检查语句: return
+2025-03-26T16:26:31.650Z       方法constructor已经被检查过
+2025-03-26T16:26:31.651Z     开始检查Child3的实例初始函数@instance_init
+2025-03-26T16:26:31.651Z       该类初始方法没有this变量
+2025-03-26T16:26:31.652Z       添加local变量
+2025-03-26T16:26:31.652Z   开始检查文件funcInterfaceFile
+2025-03-26T16:26:31.652Z   this file is interface file 
+2025-03-26T16:26:31.653Z Finish the type check

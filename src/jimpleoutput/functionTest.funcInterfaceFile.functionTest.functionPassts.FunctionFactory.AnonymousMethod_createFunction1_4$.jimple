@@ -1,0 +1,37 @@
+public class functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ extends java.lang.Object implements functionTest.funcInterfaceFile.numberTonumberFunction
+{
+
+public void <init> ()
+{
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ this;
+
+this := @this: functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+return;
+
+}
+
+public int apply (int)
+{
+int $r0, $r2;
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ $r1;
+
+
+$r1 := @this: functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$;
+$r0 := @parameter0: int;
+$r2 = staticinvoke <functionTest.functionPassts.FunctionFactory : int AnonymousMethod_createFunction1_4(int)>($r0);
+return $r2;
+
+}
+
+public static functionTest.funcInterfaceFile.numberTonumberFunction bootstrap$ ()
+{
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ $r0;
+
+$r0 = new functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$;
+specialinvoke $r0.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ :  void <init>( )>();
+return $r0;
+
+}
+
+}

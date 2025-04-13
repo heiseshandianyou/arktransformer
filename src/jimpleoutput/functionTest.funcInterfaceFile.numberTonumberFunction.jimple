@@ -1,0 +1,6 @@
+public interface functionTest.funcInterfaceFile.numberTonumberFunction extends java.lang.Object
+{
+
+public abstract int apply (int);
+
+}
