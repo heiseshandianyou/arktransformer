@@ -1,0 +1,43 @@
+public class superClass.superts.Parent3 extends java.lang.Object
+{
+
+java.lang.Object instance_init ()
+{
+superClass.superts.Parent3 this;
+
+this := @this: superClass.superts.Parent3;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+superClass.superts.Parent3 this;
+
+this := @this: superClass.superts.Parent3;
+return;
+
+}
+
+public void <init> (int)
+{
+superClass.superts.Parent3 this;
+int number;
+java.lang.Object extra, console;
+boolean $temp0;
+java.lang.String $temp1, $temp2, $temp3;
+
+this := @this: superClass.superts.Parent3;
+number := @parameter0: int;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+specialinvoke this.<superClass.superts.Parent3 :  void instance_init( )>();
+$temp0 = extra | "StringConstant";
+$temp1 = "StringConstant" + number;
+$temp2 = virtualinvoke $temp1.<java.lang.String : java.lang.String concat( java.lang.String)>("StringConstant");
+$temp3 = $temp2 + $temp0;
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>($temp3);
+return;
+
+}
+
+}

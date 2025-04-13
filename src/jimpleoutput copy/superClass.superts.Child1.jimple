@@ -1,0 +1,47 @@
+public class superClass.superts.Child1 extends superClass.superts.Parent1
+{
+
+java.lang.Object instance_init ()
+{
+superClass.superts.Child1 this;
+
+this := @this: superClass.superts.Child1;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+superClass.superts.Child1 this;
+
+this := @this: superClass.superts.Child1;
+return;
+
+}
+
+public void <init> ()
+{
+superClass.superts.Child1 this;
+java.lang.Object console;
+superClass.superts.Parent1 c1, $temp0;
+
+this := @this: superClass.superts.Child1;
+specialinvoke this.<superClass.superts.Child1 :  void instance_init( )>();
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>("StringConstant");
+$temp0 = new superClass.superts.Parent1;
+specialinvoke $temp0.<superClass.superts.Parent1 :  void <init>( )>();
+c1 = $temp0;
+if c1 != undefined goto label2;
+goto label1;
+
+label1:
+specialinvoke this.<superClass.superts.Parent1 : java.lang.Object say( )>();
+return;
+
+label2:
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>("StringConstant");
+goto label1;
+
+}
+
+}

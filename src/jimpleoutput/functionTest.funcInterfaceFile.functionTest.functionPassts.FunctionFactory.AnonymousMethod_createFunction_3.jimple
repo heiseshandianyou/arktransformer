@@ -1,0 +1,51 @@
+public class functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 extends java.lang.Object implements functionTest.funcInterfaceFile.numberTonumberFunction
+{
+functionTest.funcInterfaceFile.numberTonumberFunction cap0;
+int cap1;
+
+public void <init> (functionTest.funcInterfaceFile.numberTonumberFunction, int)
+{
+functionTest.funcInterfaceFile.numberTonumberFunction $r0;
+int $r1;
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 this;
+
+this := @this: functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3;
+$r0 := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
+$r1 := @parameter1: int;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+this.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 : functionTest.funcInterfaceFile.numberTonumberFunction cap0> = $r0;
+this.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 : int cap1> = $r1;
+return;
+
+}
+
+public int apply (int)
+{
+int $r0, $r2;
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 $r1;
+java.lang.Object $i0, $i1;
+
+$r1 := @this: functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3;
+$r0 := @parameter0: int;
+$i0 = $r1.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 : functionTest.funcInterfaceFile.numberTonumberFunction cap0>;
+$i1 = $r1.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 : int cap1>;
+$r2 = staticinvoke <functionTest.functionPassts.FunctionFactory : int AnonymousMethod_createFunction_3( functionTest.funcInterfaceFile.numberTonumberFunction, int, int)>($i0, $i1, $r0);
+return $r2;
+
+}
+
+public static functionTest.funcInterfaceFile.numberTonumberFunction bootstrap$ (functionTest.funcInterfaceFile.numberTonumberFunction, int)
+{
+functionTest.funcInterfaceFile.numberTonumberFunction $r0;
+int $r1;
+functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 $r2;
+
+$r0 := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
+$r1 := @parameter1: int;
+$r2 = new functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3;
+specialinvoke $r2.<functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 :  void <init>( functionTest.funcInterfaceFile.numberTonumberFunction, int)>($r0, $r1);
+return $r2;
+
+}
+
+}

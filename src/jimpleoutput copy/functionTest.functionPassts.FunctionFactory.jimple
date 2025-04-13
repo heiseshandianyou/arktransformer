@@ -1,7 +1,7 @@
 public class functionTest.functionPassts.FunctionFactory extends java.lang.Object
 {
 
-void instance_init ()
+java.lang.Object instance_init ()
 {
 functionTest.functionPassts.FunctionFactory this;
 
@@ -10,7 +10,7 @@ return;
 
 }
 
-static void <clinit> ()
+static java.lang.Object <clinit> ()
 {
 functionTest.functionPassts.FunctionFactory this;
 
@@ -19,7 +19,7 @@ return;
 
 }
 
-public void main ()
+public java.lang.Object main ()
 {
 functionTest.functionPassts.FunctionFactory this, FunctionFactory;
 int add, result;
@@ -30,22 +30,18 @@ add = staticinvoke <functionTest.functionPassts.FunctionFactory : int createInt(
 fun1 = staticinvoke <functionTest.functionPassts.FunctionFactory : functionTest.funcInterfaceFile.numberTonumberFunction createFunction1( )>();
 fun2 = staticinvoke <functionTest.functionPassts.FunctionFactory : functionTest.funcInterfaceFile.numberTonumberFunction createFunction( functionTest.funcInterfaceFile.numberTonumberFunction, int)>(fun1, add);
 result = interfaceinvoke fun2.<functionTest.funcInterfaceFile.numberTonumberFunction: int apply(int)>(10);
-staticinvoke <functionTest.functionPassts.FunctionFactory : void sink( int)>(result);
+staticinvoke <functionTest.functionPassts.FunctionFactory : java.lang.Object sink( int)>(result);
 return;
 
 }
 
-public static int AnonymousMethod_0 (int);
-
-public static int AnonymousMethod_1 (int);
-
-public static int AnonymousMethod_2 (int);
 
 public static int AnonymousMethod_createFunction_3 (functionTest.funcInterfaceFile.numberTonumberFunction, int, int)
 {
 functionTest.functionPassts.FunctionFactory this;
 int x, $temp0, add, $temp1;
 functionTest.funcInterfaceFile.numberTonumberFunction func;
+
 
 this := @this: functionTest.functionPassts.FunctionFactory;
 func := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
@@ -71,7 +67,7 @@ return $temp0;
 
 public void <init> ()
 {
-functionTest.functionPassts.FunctionFactory this;
+java.lang.Object this;
 
 this := @this: functionTest.functionPassts.FunctionFactory;
 specialinvoke this.<java.lang.Object :  void <init>( )>();
@@ -84,11 +80,11 @@ public static void sink (int)
 {
 functionTest.functionPassts.FunctionFactory this;
 int input;
-java.lang.Object console;
+
 
 this := @this: functionTest.functionPassts.FunctionFactory;
 input := @parameter0: int;
-virtualinvoke console.<java.lang.Object : java.lang.Object log( int)>(input);
+
 return;
 
 }
@@ -105,13 +101,13 @@ return 5;
 public static functionTest.funcInterfaceFile.numberTonumberFunction createFunction (functionTest.funcInterfaceFile.numberTonumberFunction, int)
 {
 functionTest.functionPassts.FunctionFactory this;
-functionTest.funcInterfaceFile.numberTonumberFunction func, AnonymousMethod_createFunction_3;
+functionTest.funcInterfaceFile.numberTonumberFunction func;
 int add;
+functionTest.funcInterfaceFile.numberTounknownFunction AnonymousMethod_createFunction_3;
 
 this := @this: functionTest.functionPassts.FunctionFactory;
 func := @parameter0: functionTest.funcInterfaceFile.numberTonumberFunction;
 add := @parameter1: int;
-AnonymousMethod_createFunction_3 = staticinvoke <functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction_3 : functionTest.funcInterfaceFile.numberTonumberFunction bootstrap$( functionTest.funcInterfaceFile.numberTonumberFunction, int)>(func, add);
 return AnonymousMethod_createFunction_3;
 
 }
@@ -119,10 +115,10 @@ return AnonymousMethod_createFunction_3;
 public static functionTest.funcInterfaceFile.numberTonumberFunction createFunction1 ()
 {
 functionTest.functionPassts.FunctionFactory this;
-functionTest.funcInterfaceFile.numberTonumberFunction AnonymousMethod_createFunction1_4;
+functionTest.funcInterfaceFile.numberTounknownFunction AnonymousMethod_createFunction1_4;
 
 this := @this: functionTest.functionPassts.FunctionFactory;
-AnonymousMethod_createFunction1_4 = staticinvoke <functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4 : functionTest.funcInterfaceFile.numberTonumberFunction bootstrap$( )>();
+AnonymousMethod_createFunction1_4 = staticinvoke <functionTest.funcInterfaceFile.functionTest.functionPassts.FunctionFactory.AnonymousMethod_createFunction1_4$ : functionTest.funcInterfaceFile.numberTounknownFunction bootstrap$( )>();
 return AnonymousMethod_createFunction1_4;
 
 }

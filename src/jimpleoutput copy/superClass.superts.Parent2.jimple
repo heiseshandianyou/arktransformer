@@ -1,0 +1,39 @@
+public class superClass.superts.Parent2 extends java.lang.Object
+{
+
+java.lang.Object instance_init ()
+{
+superClass.superts.Parent2 this;
+
+this := @this: superClass.superts.Parent2;
+return;
+
+}
+
+static java.lang.Object <clinit> ()
+{
+superClass.superts.Parent2 this;
+
+this := @this: superClass.superts.Parent2;
+return;
+
+}
+
+public void <init> (java.lang.String)
+{
+superClass.superts.Parent2 this;
+java.lang.String message, $temp0;
+java.lang.Object console;
+
+this := @this: superClass.superts.Parent2;
+message := @parameter0: java.lang.String;
+specialinvoke this.<java.lang.Object :  void <init>( )>();
+specialinvoke this.<superClass.superts.Parent2 :  void instance_init( )>();
+$temp0 = "StringConstant";
+$temp0 = virtualinvoke $temp0.<java.lang.String : java.lang.String concat( java.lang.String)>(message);
+virtualinvoke console.<java.lang.Object : java.lang.Object log( java.lang.String)>($temp0);
+return;
+
+}
+
+}

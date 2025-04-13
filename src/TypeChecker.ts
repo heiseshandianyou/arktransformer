@@ -12,6 +12,8 @@ import { TypeInference, ArkIfStmt,BasicBlock, Local, ModelUtils, StringType, Arr
 
 import Logger from "./Logger1";
 
+import { Map as mp } from "./Map";
+
 import { Logger2 } from "./Logger2";
 
 
@@ -27,7 +29,7 @@ export class TypeChecker{
     
     constructor(scene: Scene) {
         this.scene = scene;
-        this.logger = new Logger2("logfile");
+        this.logger = new Logger2("logfiles");
         this.checkedMethods = new Map();
         this.toCheckMethods = new Map();
         // 遍历所有的 方法 全部加到 待检查的map里
@@ -155,6 +157,7 @@ export class TypeChecker{
 
     // 这个是检查类型的总方法
     public checkType() {
+        console.log("开始检查类型");
         // 调用自带的类型推断
         this.scene.inferTypes();
         this.logger.log("开始对项目进行类型检查", 0);
@@ -612,155 +615,7 @@ export class TypeChecker{
                             this.logger.log("该方法有方法体", loggerLevel + 1);
                             // 如果方法没有被检查我们需要调用方法检查
                             this.checkMethod(funcMethod, funcMethod.getDeclaringArkClass(), true, loggerLevel + 2, inputMethod);
-                            // 我们假设在经历过检查之后 函数方法的类型 包括签名已经完备
-                            funcSig = funcMethod.getSignature();
-                            let inputTypes: Type[] = parseFunSigMustInputTypes(funcSig);
-                            let returnType: Type = funcSig.getMethodSubSignature().getReturnType();
-                            //funcSig = funcMethod.getSignature();
-                            this.logger.log("函数方法输入类型是" + inputTypes, loggerLevel + 1);
-                            this.logger.log("函数方法输出类型是" + returnType, loggerLevel + 1);
-                            // 接下来我们会为他构造一个函数接口
-                            // 得到scene中那个被构造的文件 我们通过构造一个 文件签名来检索他
-                            const funcInterFaceFileSignature = new FileSignature(this.scene.getProjectName(), 'funcInterfaceFile');
-                            let interfaceFile: ArkFile = this.scene.getFile(funcInterFaceFileSignature);
-                            if (interfaceFile) {
-                                this.logger.log("找到 函数接口文件 开始构造函数对应接口", loggerLevel + 2);
-                                // 根据输入和输出信息来寻找是否已经存在对应的接口
-                                let funcType: string;
-                                let inputTypesString: string = "";
-                                let returnTypesString: string = "";
-                                let interfaceName: string = "";
-                                // 如果没有输入 也没有 输出 (void) 那就归为 Runnable
-                                if (inputTypes.length === 0 && returnType instanceof VoidType) {
-                                    funcType = "Runnable";
-                                    interfaceName = funcType;
-                                }
-                                // 至少有 一个输入或者输出 我们统一构造为一个输入类型1+2+输出类型+Function的接口
-                                else {
-                                    funcType = "Function";
-                                    if (inputTypes.length === 0) {
-                                        inputTypesString = "void";
-                                    }
-                                    else {
-                                        inputTypes.forEach(type => {
-                                            inputTypesString += type.toString();
-                                        });
-                                    }
-                                    returnTypesString = returnType.toString();
-                                    interfaceName = inputTypesString + "To" + returnTypesString + funcType;
-                                   
-                                }
-                                this.logger.log("构造的接口名字为: " + interfaceName, loggerLevel + 2);
-                                // 在这个文件里 搜索 有没有和 接口名同名的方法 没有就构造一个
-                                if (interfaceFile.getClassWithName(interfaceName)) {
-                                    this.logger.log("接口文件中 已有 对应的接口类", loggerLevel + 2);
-                                }
-                                // 构造对应接口类
-                                else {
-                                    this.logger.log("接口文件中 没有 对应的接口类", loggerLevel + 2);
-                                    // 开始构造 对应的类
-                                    const interFaceClass = new ArkClass();
-                                    interFaceClass.setDeclaringArkFile(interfaceFile);
-                                    const interFaceClassSignature = new ClassSignature( interfaceName,
-                                    interFaceClass.getDeclaringArkFile().getFileSignature(), interFaceClass.getDeclaringArkNamespace()?.getSignature() || null);
-                                    interFaceClass.setSignature(interFaceClassSignature);
-                                    // 把类的 类别设置为接口
-                                    interFaceClass.setCategory(ClassCategory.INTERFACE);
-                                    interfaceFile.addArkClass(interFaceClass);
-        
-                                    // 开始构造方法  没有方法体 且 修饰符为 public abstract
-                                    // 方法名统一设置为 apply
-                                    let interfaceMethod: ArkMethod = new ArkMethod();
-                                    interfaceMethod.setDeclaringArkClass(interFaceClass);
-        
-                                    // 设置方法签名  我们可以从之前的方法签名那里得到我们的参数
-                                    let interfaceMethodSubSig: MethodSubSignature = 
-                                        new MethodSubSignature('apply', 
-                                            funcSig.getMethodSubSignature().getParameters(),
-                                            returnType,
-                                            false
-                                        );
-                                
-                                    let interfaceMethodSignature = new MethodSignature(interfaceMethod.getDeclaringArkClass().getSignature(),
-                                        interfaceMethodSubSig);
-                                    interfaceMethod.setSignature(interfaceMethodSignature);
-                                    // 设置修饰符
-                                    interfaceMethod.setModifiers(36);
-                                    interFaceClass.addMethod(interfaceMethod);
-                                    this.logger.log("接口方法构造完成: " + interfaceMethodSignature, loggerLevel + 2);
-                                }
-                                // 接口构造完成 开始构造 生成语句
-                                // 首先我们先遍历这个方法的 语句 看这个函数Local是否出现在 赋值的左边
-                                // 遍历所有的 BB
-                                let ifNeedGenFunction: Boolean = true;
-                                // 遍历这个Local的使用的语句
-                                inputMethod.getBody().getCfg().getStmts().forEach((stmt) => {
-                                    if (stmt instanceof ArkAssignStmt) {
-                                        if (stmt.getLeftOp().getType() instanceof FunctionType) {
-                                            if (stmt.getLeftOp().getType().getMethodSignature().isMatch(funcSig)) {
-                                                ifNeedGenFunction = false;
-                                            }                                   
-                                        }
-                                    }
-                                });
-                                // 构造函数类
-                                let bootstrapSig: MethodSignature = this.createFunctionClass(funcSig, loggerLevel + 2);
-                                // 构建创造函数语句
-                                if (ifNeedGenFunction) {
-                                    let firstUse: boolean = true;
-                                    this.logger.log("没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置", loggerLevel + 1);
-                                        if (inputMethod.getBody()) {
-                                            let basicBlocks:Set<BasicBlock> = inputMethod.getBody().getCfg().getBlocks();
-                                            // 这里我们暂时认定 遍历顺序就是 执行顺序
-                                            // TODO 按照真正的执行顺序遍历语句	
-                                            basicBlocks.forEach(block => { 
-                                                if (firstUse) {
-                                                    let stmts: Stmt[] = block.getStmts();
-                                                    for (let i: number = 1; i < stmts.length; i++) {
-                                                        //找到第一次使用的位置并且插入
-                                                        let values: Value[] = stmts[i].getUses();
-                                                        values.forEach((value) => {
-                                                            if (value.getType() instanceof FunctionType && firstUse) {
-                                                                if (value.getType().getMethodSignature().isMatch(funcSig)) {
-                                                                    this.logger.log("找到函数使用",loggerLevel + 2);
-                                                                    this.logger.log("在语句: " + stmts[i] + "之前开始构建函数生成语句", loggerLevel + 2);
-                                                                    // 生成一个静态调用语句  输入为 可选参数
-                                                                    if (bootstrapSig) {
-                                                                        let paras: MethodParameter[] = funcSig.getMethodSubSignature().getParameters();
-                                                                        let args: Local[] = [];
-                                                                        for (let i: number = 0; i < paras.length; i++) {
-                                                                            if (paras[i].isOptional()) {																					let arg: Local = new Local(paras[i].getName(), paras[i].getType());
-                                                                                    args.push(arg);
-                                                                            }
-                                                                            else{
-                                                                                break;
-                                                                            }
-                                                                        }
-                                                                            
-                                                                        let newStaticInvokeExpr: ArkStaticInvokeExpr = new ArkStaticInvokeExpr(bootstrapSig, args);
-                                                                        let genStmt: ArkAssignStmt = new ArkAssignStmt(value, newStaticInvokeExpr);
-                                                                        genStmt.setCfg(inputMethod.getBody().getCfg());
-                                                                        stmts.splice(i, 0, genStmt);
-                                                                        block.setStmts(stmts);
-                                                                        this.logger.log("成功构建语句" + genStmt, loggerLevel + 3);
-                                                                        firstUse = false;
-                                                                    }
-                                                                    else {
-                                                                        this.logger.log("警告!!!!!  没有找到生成的函数类", loggerLevel + 2);
-                                                                    }
-                                                                }
-                                                                }
-                                                        });
-                                                    }                                           
-                                                }                                   
-                                            });
-                                        }
-                                        else {
-                                            this.logger.log("警告!!!!:   没有找到" + inputMethod.getSignature() + " 方法体", loggerLevel + 1);
-                                        }
-                                        
-                                }								
-                            }
+                            
                         }
                         else {
                             this.logger.log("该方法没有方法体", loggerLevel + 1);
@@ -768,6 +623,165 @@ export class TypeChecker{
                             
                         }		
 
+                    }
+                    // 我们假设在经历过检查之后 函数方法的类型 包括签名已经完备
+                    funcSig = funcMethod.getSignature();
+                    // 更新local的type 
+                    local.setType(new FunctionType(funcSig, local.getType().getRealGenericTypes()));
+                    let inputTypes: Type[] = parseFunSigMustInputTypes(funcSig);
+                    let returnType: Type = funcSig.getMethodSubSignature().getReturnType();
+                    //funcSig = funcMethod.getSignature();
+                    this.logger.log("函数方法输入类型是" + inputTypes, loggerLevel + 1);
+                    this.logger.log("函数方法输出类型是" + returnType, loggerLevel + 1);
+                    // 接下来我们会为他构造一个函数接口
+                    // 得到scene中那个被构造的文件 我们通过构造一个 文件签名来检索他
+                    const funcInterFaceFileSignature = new FileSignature(this.scene.getProjectName(), 'funcInterfaceFile');
+                    let interfaceFile: ArkFile = this.scene.getFile(funcInterFaceFileSignature);
+                    if (interfaceFile) {
+                        this.logger.log("找到 函数接口文件 开始构造函数对应接口", loggerLevel + 2);
+                        // 根据输入和输出信息来寻找是否已经存在对应的接口
+                        let funcType: string;
+                        let inputTypesString: string = "";
+                        let returnTypesString: string = "";
+                        let interfaceName: string = "";
+                        // 如果没有输入 也没有 输出 (void) 那就归为 Runnable
+                        if (inputTypes.length === 0 && returnType instanceof VoidType) {
+                            funcType = "Runnable";
+                            interfaceName = funcType;
+                        }
+                        // 至少有 一个输入或者输出 我们统一构造为一个输入类型1+2+输出类型+Function的接口
+                        else {
+                            funcType = "Function";
+                            if (inputTypes.length === 0) {
+                                inputTypesString = "void";
+                            }
+                            else {
+                                inputTypes.forEach(type => {
+                                    inputTypesString += type.toString();
+                                });
+                            }
+                            returnTypesString = returnType.toString();
+                            interfaceName = inputTypesString + "To" + returnTypesString + funcType;
+                           
+                        }
+                        this.logger.log("构造的接口名字为: " + interfaceName, loggerLevel + 2);
+                        // 在这个文件里 搜索 有没有和 接口名同名的方法 没有就构造一个
+                        if (interfaceFile.getClassWithName(interfaceName)) {
+                            this.logger.log("接口文件中 已有 对应的接口类", loggerLevel + 2);
+                        }
+                        // 构造对应接口类
+                        else {
+                            this.logger.log("接口文件中 没有 对应的接口类", loggerLevel + 2);
+                            // 开始构造 对应的类
+                            const interFaceClass = new ArkClass();
+                            interFaceClass.setDeclaringArkFile(interfaceFile);
+                            const interFaceClassSignature = new ClassSignature( interfaceName,
+                            interFaceClass.getDeclaringArkFile().getFileSignature(), interFaceClass.getDeclaringArkNamespace()?.getSignature() || null);
+                            interFaceClass.setSignature(interFaceClassSignature);
+                            // 把类的 类别设置为接口
+                            interFaceClass.setCategory(ClassCategory.INTERFACE);
+                            interfaceFile.addArkClass(interFaceClass);
+                            
+                            // 开始构造方法  没有方法体 且 修饰符为 public abstract
+                            // 方法名统一设置为 apply
+                            let interfaceMethod: ArkMethod = new ArkMethod();
+                            interfaceMethod.setDeclaringArkClass(interFaceClass);
+
+                            // 设置方法签名  我们可以从之前的方法签名那里得到我们的参数
+                            let interfaceMethodSubSig: MethodSubSignature = 
+                                new MethodSubSignature('apply', 
+                                    funcSig.getMethodSubSignature().getParameters(),
+                                    returnType,
+                                    false
+                                );
+                        
+                            let interfaceMethodSignature = new MethodSignature(interfaceMethod.getDeclaringArkClass().getSignature(),
+                                interfaceMethodSubSig);
+                            interfaceMethod.setSignature(interfaceMethodSignature);
+                            // 设置修饰符
+                            interfaceMethod.setModifiers(36);
+                            interFaceClass.addMethod(interfaceMethod);
+                            this.logger.log("接口方法构造完成: " + interfaceMethodSignature, loggerLevel + 2);
+                        }
+                        // 接口构造完成 开始构造 生成语句
+                        // 首先我们先遍历这个方法的 语句 看这个函数Local是否出现在 赋值的左边
+                        // 遍历所有的 BB
+                        let ifNeedGenFunction: Boolean = true;
+                        // 遍历这个Local的使用的语句
+                        inputMethod.getBody().getCfg().getStmts().forEach((stmt) => {
+                            if (stmt instanceof ArkAssignStmt) {
+                                if (stmt.getLeftOp().getType() instanceof FunctionType) {
+                                    if (stmt.getLeftOp().getType().getMethodSignature().isMatch(funcSig)) {
+                                        ifNeedGenFunction = false;
+                                    }                                   
+                                }
+                            }
+                        });
+                        // 构造函数类
+                        // 得到接口全名
+                        let interName: String = mp.classSignatureMap(interfaceFile.getClassWithName(interfaceName).getSignature().toString());
+                        let bootstrapSig: MethodSignature = this.createFunctionClass(funcSig, loggerLevel + 2, interName);
+                        // 构建创造函数语句
+                        // 即调用对应函数类的bootstrap方法
+                        if (ifNeedGenFunction) {
+                            let firstUse: boolean = true;
+                            this.logger.log("没有找到函数变量的赋值语句 开始遍历所有语句找到合适插入位置", loggerLevel + 1);
+                            // let usedStmts: Stmt[] = local.getUsedStmts();
+                            // console.log(local.getName());
+                            // usedStmts.forEach(stmt => {
+                            //     console.log(stmt);
+                            // });
+                            if (inputMethod.getBody()) {
+                                    let basicBlocks:Set<BasicBlock> = inputMethod.getBody().getCfg().getBlocks();
+                                    // 这里我们暂时认定 遍历顺序就是 执行顺序
+                                    // TODO 按照真正的执行顺序遍历语句	
+                                    basicBlocks.forEach(block => { 
+                                        if (firstUse) {
+                                            let stmts: Stmt[] = block.getStmts();
+                                            for (let i: number = 0; i < stmts.length; i++) {
+                                                //找到第一次使用的位置并且插入
+                                                let values: Value[] = stmts[i].getUses();
+                                                values.forEach((value) => {
+                                                    if (value.getType() instanceof FunctionType && firstUse) {
+                                                        if (value === local) {
+                                                            this.logger.log("找到函数使用",loggerLevel + 2);
+                                                            this.logger.log("在语句: " + stmts[i] + "之前开始构建函数生成语句", loggerLevel + 2);
+                                                            // 生成一个静态调用语句  输入为 可选参数
+                                                            if (bootstrapSig) {
+                                                                let paras: MethodParameter[] = funcSig.getMethodSubSignature().getParameters();
+                                                                let args: Local[] = [];
+                                                                for (let i: number = 0; i < paras.length; i++) {
+                                                                    if (paras[i].isOptional()) {																					let arg: Local = new Local(paras[i].getName(), paras[i].getType());
+                                                                            args.push(arg);
+                                                                    }
+                                                                    else{
+                                                                        break;
+                                                                    }
+                                                                }
+                                                                    
+                                                                let newStaticInvokeExpr: ArkStaticInvokeExpr = new ArkStaticInvokeExpr(bootstrapSig, args);
+                                                                let genStmt: ArkAssignStmt = new ArkAssignStmt(value, newStaticInvokeExpr);
+                                                                genStmt.setCfg(inputMethod.getBody().getCfg());
+                                                                stmts.splice(i, 0, genStmt);
+                                                                block.setStmts(stmts);
+                                                                this.logger.log("成功构建语句" + genStmt, loggerLevel + 3);
+                                                                firstUse = false;
+                                                            }
+                                                            else {
+                                                                this.logger.log("警告!!!!!  没有找到生成的函数类", loggerLevel + 2);
+                                                            }
+                                                        }
+                                                        }
+                                                });
+                                            }                                           
+                                        }                                   
+                                    });
+                                }
+                                else {
+                                    this.logger.log("警告!!!!:   没有找到" + inputMethod.getSignature() + " 方法体", loggerLevel + 1);
+                                }
+                                
+                        }								
                     }
                 }
                 else {
@@ -781,11 +795,11 @@ export class TypeChecker{
 
     //这个方法用来为每个 函数 产生一个具体实现的类
     //我们现在拥有一个 methodSig 其中 可选的参数表示需要捕捉和输入的参数 必选的参数表示一定要有的
-    private createFunctionClass(methodSig: MethodSignature, loggerLevel: number): MethodSignature|null {
-        // 类的名字 方法的全局名字 + $
+    private createFunctionClass(methodSig: MethodSignature, loggerLevel: number, interfaceName: String): MethodSignature|null {
+        // 类的名字 方法的全局名字
         let declaredClassSig: ClassSignature = methodSig.getDeclaringClassSignature();
         let className: string = methodSig.getMethodSubSignature().getMethodName();
-        className = declaredClassSig.toString() + "." + className + "$";
+        className = declaredClassSig.toString() + "." + className;
         this.logger.log("开始构造函数类:" + className, loggerLevel + 1);
         // 开始构造类 这个类我们沿用 之前
         // 得到scene中那个被构造的文件 我们通过构造一个 文件签名来检索他
@@ -802,6 +816,8 @@ export class TypeChecker{
             funcClass.setCategory(ClassCategory.CLASS);
             interfaceFile.addArkClass(funcClass);
             this.logger.log("开始构造函数类:" + className, loggerLevel + 1);
+            // 设置实现的接口
+            funcClass.addImplementedInterfaceName(interfaceName);
             // 不用设置 修饰符 因为我们的 printer 默认public
             // 开始构造字段
             // 得到 可选类型
@@ -1268,9 +1284,11 @@ export class TypeChecker{
 
     // 这个方法主要用来规范一个方法中出现的所有 调用表达式的推导
     private checkValues(arkMethod: ArkMethod, loggerLevel: number) {
+        // 记录所有的返回类型
+        let returnTypes: Type[] = [];
         // 因为这个方法会构造新的Local所以 引入index
         let id: number = 0;
-        this.logger.log("开始检查调用表达式", loggerLevel);
+        this.logger.log("开始检查调用语句里的类型", loggerLevel);
         // 遍历所有语句
         // 遍历 一个方法里所有的语句
         let blocks: BasicBlock[] = Array.from(arkMethod.getBody().getCfg().getBlocks());
@@ -1278,13 +1296,16 @@ export class TypeChecker{
             let stmts: Stmt[] = blocks[i].getStmts();
             let stmtsNumber = stmts.length;
             for (let j: number = 0; j < stmtsNumber; j++) {
-                let values: Value[] = stmts[j].getUses();
+                let stmt: Stmt = stmts[j];
+                let values: Value[] = stmt.getUses();
                 this.logger.log("检查语句: " + stmts[j], loggerLevel);
                 for (let k: number = 0; k < values.length; k++) {
                     
                     this.logger.log("检查值: " + values[k] + "类型是: " + values[k].getType(), loggerLevel + 1);
                     // 如果值是一个 Expr
                     if (values[k] instanceof AbstractExpr) {
+
+                        // 调用表达式
                         if (values[k] instanceof AbstractInvokeExpr) {
                             this.logger.log("包含调用表达式: " + values[k], loggerLevel + 2);
                             let methodSig: MethodSignature = values[k].getMethodSignature();
@@ -1344,6 +1365,8 @@ export class TypeChecker{
                                 }
                             }
                         }
+
+                        // 二元表达式
                         else if (values[k] instanceof AbstractBinopExpr){
                             this.logger.log("值: " + values[k] + "是一个二元表达式", loggerLevel + 1);
                             // 检查是否是 string + string
@@ -1401,6 +1424,11 @@ export class TypeChecker{
                                         blocks[i].setStmts(stmts);
                                     }
                                 }
+                                else {
+                                    // 调用自己的设置类型
+                                    values[k].setType();
+                                    this.logger.log("值: " + values[k] + "是一个二元表达式 类型是" + values[k].getType(), loggerLevel + 1);
+                                }
                             }
                             else {
                                 // 调用自己的设置类型
@@ -1411,7 +1439,10 @@ export class TypeChecker{
                     }
                     // 如果值是一个 Ref
                     else if (values[k] instanceof AbstractRef){
+
                         this.logger.log("值: " + values[k] + " 是一个引用类型", loggerLevel + 1);
+
+                        // 实例引用类型
                         if (values[k] instanceof ArkInstanceFieldRef){
                             // 字段签名的 getType() 返回为未知
                             if (values[k].getType() instanceof UnknownType){
@@ -1500,39 +1531,53 @@ export class TypeChecker{
                         }
                     }
                 }
+                if (stmt instanceof ArkAssignStmt) {
+                    this.logger.log("该语句是ArkAssignStmt" , loggerLevel);
+                    // 把右边的类型赋值给左边
+                    stmt.getLeftOp().setType(stmt.getRightOp().getType());
+
+                }
+                else if (stmt instanceof ArkReturnVoidStmt) {
+                    returnTypes.push(VoidType.getInstance())
+                }
+                else if (stmt instanceof ArkReturnStmt) {
+                    returnTypes.push(stmt.getOp().getType())
+                }
             }
         }
+        // 检查返回类型
+        let oldSubSig: MethodSubSignature;
+        let newSubSig: MethodSubSignature;
+        let newSig: MethodSignature;
+        let returnType: Type;
+        if (returnTypes.length === 0) {
+            returnType = VoidType.getInstance()
+        }
+        else if (returnTypes.length === 1) {
+            returnType = returnTypes[0]
+        }
+        else {
+            returnType = new UnionType(returnTypes)
+        }
+        // UnionType
+        oldSubSig = arkMethod.getSignature().getMethodSubSignature();
+        newSubSig = new MethodSubSignature(oldSubSig.getMethodName(), 
+        oldSubSig.getParameters(), returnType , oldSubSig.isStatic());
+        newSig = new MethodSignature(arkMethod.getSignature().getDeclaringClassSignature(), newSubSig);
+        arkMethod.setSignature(newSig); 
+        this.logger.log("更新方法返回类型之后的签名: " + newSig, loggerLevel);
 
+               
 
     }
 
 
     // 这一生 步履跌跌撞撞不信前路长 也叹寒凉又滚烫
-    // now need a function to check the type in stmt
-    private checkType4Stmt(arkMethod: ArkMethod, loggerLevel: number): void {
-        this.logger.log("开始检查方法: " + arkMethod.getName() + " 的语句", loggerLevel);
-        // 遍历语句
-        this.logger.log("开始检查调用表达式", loggerLevel);
-        // 遍历所有语句
-        // 遍历 一个方法里所有的语句
-        let blocks: BasicBlock[] = Array.from(arkMethod.getBody().getCfg().getBlocks());
-        for (let i: number = 0; i < blocks.length; i++ ) {
-            let stmts: Stmt[] = blocks[i].getStmts();
-            let stmtsNumber = stmts.length;
-            for (let j: number = 0; j < stmtsNumber; j++) {
-                let stmt: Stmt = stmts[j];
-                // 判断语句为什么类型
-                
-            }
-        }
-
-    }
 
 
     // this method is used to check if a ArkStaticInvokeExpr invoke the super method
     // @_UnknownProjectName/_UnknownFileName: .super()
     // this is important because the method can be found in the scene
-
     private checkIfSuperCall(invokeExpr: ArkStaticInvokeExpr) {
 
     }
